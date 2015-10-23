@@ -1,0 +1,80 @@
+{
+	"materials": {
+	"pwr_uox": {"attributes": {"recipe": true}, 
+			"constraints": [ 
+					["U235", 3.25],
+					["O16", 200], 
+					["U238", 96.75]], 
+			"metadata": {}
+				 }, 
+	"spent_pwr_uox": {"attributes": {"recipe": false}, 
+					"constraints": [], 
+					"metadata": {
+					"suggestedComposition": [["U235",  0.5248], 
+								 ["U238", 89.3300], 
+								 ["PU238", 0.0229], 
+								 ["PU239", 0.5429], 
+								 ["PU240", 0.2472], 
+								 ["PU241", 0.1592], 
+								 ["PU242", 0.0825], 
+								 ["AM241", 0.0040],
+			 					 ["O16", 200], 
+					}
+				 }
+		},
+	"facilities": {
+	"lwr_reactor": {
+		"metadata": {"type": "reactor"},
+		"attributes": {
+		"thermalPower": 	["float", "GWt"],
+		"efficiency": 		["float", "percent"],
+		"cycleLength": 		["int", "EFPD"],
+		"capacityFactor": 	["float", "percent"],
+		"lifetime": 		["int", "year"],
+		"fuels": 		["nea_pwr_uox"],
+		"batches": 		["int", "", ["pwr_uox"]],
+		"coreLoading": 		["float", "tHM", ["pwr_uox"]],
+		"burnup": 		["float", "GWd/tHM", ["pwr_uox"]],
+		"storageTime": 		["int", "year", ["pwr_uox"]],
+		"coolingTime": 		["int", "year", ["pwr_uox"]]
+		},
+		"constraints": [	["thermalPower", 2.8387],
+					["efficiency", 34.0],
+					["cycleLength", 365.25],
+					["capacityFactor", 100],
+					["lifetime", 120],
+					["batches", 3, "pwr_uox"],
+					["coreLoading", 82, "pwr_uox"],
+					["burnup", 43.03, "pwr_uox"],
+					["storageTime", 0, "pwr_uox"],
+					["coolingTime", 0, "pwr_uox"]
+		],
+		"inputs": ["pwr_uox"],
+		"outputs": ["spent_pwr_uox"]
+	},
+	"repository": {
+		"metadata": {
+		"type":"repository"
+		},
+		"attributes": {},
+		"constraints": [],
+		"inputs": ["spent_pwr_uox"]
+	}
+	},
+	"fuelCycle": {
+	"attributes": {
+			"grid": "year",
+			"initialConditions": {
+				"lwr_reactor_power": 1
+				"repository": 1
+			},
+			"demands": {
+			}
+	},
+	"constraints": {
+			"grid": [0, 120],
+			"demands": {
+				}
+		}
+	}
+}
