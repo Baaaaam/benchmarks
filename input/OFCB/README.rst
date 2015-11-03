@@ -2,9 +2,7 @@ Open Fuel Cycle Benchmark input
 ====================
 
 This is a repository for the specification of the different test of the open fuel cycle benchmark.
-It contains the specification file in different formats for the different test defined in :  
-https://docs.google.com/document/d/1kUfD3rwFf4xceZvqXzywrcH2GuWm8BWvUDSw0A1buKI/edit?usp=sharing
-
+It contains the specification file in different formats for the different test defined in 
 
 Contains
 --------------------
