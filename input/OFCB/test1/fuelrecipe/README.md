@@ -2,8 +2,8 @@ CLASS Fuel recipe file ".dat" and ".info" file.
 ===============================================
 
 the fuel recipe in CLASS comes with 2 files :
-the .dat file with contain the evolution of the main characteristics of the fuel
-the .info file which contains the information used to build the evolution (mass, power, fuel type...)
+* the .dat file with contain the evolution of the main characteristics of the fuel,
+* the .info file which contains the information used to build the evolution (mass, power, fuel type...)
 
 dat file format description
 ----------------------------
