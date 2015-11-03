@@ -8,7 +8,7 @@ the fuel recipe in CLASS comes with 2 files :
 dat file format description
 ----------------------------
 
-the ".dat" file is formated in line : each line contain the evolution of a parameter at each timestep. keyword placed in the begining of each line to be able to know the parameter described.
+the ".dat" file is formated in line : each line contain the evolution of a parameter at each timestep. A keyword is placed in the begining of each line to be able to identify the parameter described.
 Keyword used :
 
  * **time**: time in s of each step
