@@ -28,7 +28,7 @@ Problems based on a once-through cycle:
 10. **120 year simulation, ten reactors, fixed fuel recipe, reactor lifetimes are staggered, with a new reactor shutting down/replaced each 10 years**
 
 
-A more detailled test definition and output definition can be found in [here](http://docs.google.com/document/d/1kUfD3rwFf4xceZvqXzywrcH2GuWm8BWvUDSw0A1buKI).
+A more detailled test definition and output definition can be found in here : http://docs.google.com/document/d/1kUfD3rwFf4xceZvqXzywrcH2GuWm8BWvUDSw0A1buKI .
 
 Contains
 --------------------
