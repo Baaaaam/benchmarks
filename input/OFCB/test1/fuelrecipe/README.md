@@ -5,7 +5,7 @@ the fuel recipe in CLASS comes with 2 files :
 * the .dat file with contain the evolution of the main characteristics of the fuel,
 * the .info file which contains the information used to build the evolution (mass, power, fuel type...)
 
-dat file format description
+".dat" file format description
 ----------------------------
 
 the ".dat" file is formated in line : each line contain the evolution of a parameter at each timestep. A keyword is placed in the begining of each line to be able to identify the parameter described.
