@@ -15,21 +15,20 @@ Generic test defnition
 
 Problems based on a once-through cycle:
 
-1. 120 year simulation, single reactor, fixed fuel recipe, 120 years operation 
+1. **120 year simulation, single reactor, fixed fuel recipe, 120 years operation** 
 			to be defined: reactor power, fuel burnup and associated recipes, (re)fueling strategy
-2. 120 year simulation, two reactors, fixed fuel recipe, 120 years operation
-3. 120 year simulation, ten reactors, fixed fuel recipe, 120 years operation
-4. 120 year simulation, two reactors, fixed fuel recipe, first reactor operates for 120 years, second reactor starts at midpoint
-5. 120 year simulation, ten reactors, fixed fuel recipe, a new reactor starts every 10 years and continues throughout simulation
-6. 120 year simulation, single reactor, fixed fuel recipe, 60 years operation replaced by another reactor
-7. 120 year simulation, two reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor
-8. 120 year simulation, ten reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor
-9. 120 year simulation, two reactors, fixed fuel recipe, reactor A: operates 20 years, replaced by 60 year reactor and another 60 year reactor, reactor B: operates 40 years, replaced by 60 year reactor and another 60 year reactor
-10. 120 year simulation, ten reactors, fixed fuel recipe, reactor lifetimes are staggered, with a new reactor shutting down/replaced each 10 years
+2. **120 year simulation, two reactors, fixed fuel recipe, 120 years operation**
+3. **120 year simulation, ten reactors, fixed fuel recipe, 120 years operation**
+4. **120 year simulation, two reactors, fixed fuel recipe, first reactor operates for 120 years, second reactor starts at midpoint**
+5. **120 year simulation, ten reactors, fixed fuel recipe, a new reactor starts every 10 years and continues throughout simulation**
+6. **120 year simulation, single reactor, fixed fuel recipe, 60 years operation replaced by another reactor**
+7. **120 year simulation, two reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor**
+8. **120 year simulation, ten reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor**
+9. **120 year simulation, two reactors, fixed fuel recipe, reactor A: operates 20 years, replaced by 60 year reactor and another 60 year reactor, reactor B: operates 40 years, replaced by 60 year reactor and another 60 year reactor**
+10. **120 year simulation, ten reactors, fixed fuel recipe, reactor lifetimes are staggered, with a new reactor shutting down/replaced each 10 years**
 
 
 A more detailled test definition and output definition can be found in [here](https://docs.google.com/document/d/1kUfD3rwFf4xceZvqXzywrcH2GuWm8BWvUDSw0A1buKI/edit?usp=sharing)
-
 
 Contains
 --------------------
