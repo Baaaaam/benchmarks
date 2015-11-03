@@ -9,7 +9,8 @@ dat file format description
 ----------------------------
 
 the ".dat" file is formated in line : each line contain the evolution of a parameter at each timestep. A keyword is placed in the begining of each line to be able to identify the parameter described.
-Keyword used :
+
+List of keyword used :
 
  * **time**: time in s of each step
  * **keff**: neutron multiplication factor 
