@@ -1,4 +1,4 @@
-Sequential List of Fuel Cycle Verification & Validation Problems : Open Fuel Cycle Benchmark (OFCB)
+Open Fuel Cycle Benchmark (OFCB)
 ====================
 
 This is a repository for the specification of the different test of the open fuel cycle benchmark.
@@ -10,7 +10,7 @@ Background
 
 In support of a community of scholars who are developing software to simulate the nuclear fuel cycle, this set of problems is a community generated list of scenarios that is intended to progress from simple problems to verify fundamental behavior through more complex problems to be used to validate overall system evolution.
 
-Generic test defnition
+Generic test definition
 -----------------
 
 Problems based on a once-through cycle:
