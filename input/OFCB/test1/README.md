@@ -15,7 +15,7 @@ Reactor :
 * **Discharge burn-up** : 43.03 GWd/t -- Full Cycle length 3y, 
 * **Capacity factor**: 1, 
 * **Recipe sed**: REP900.dat from CLASS, fuelrecipe\STD900.dat
-* **Suggested recipe**:
+* **Suggested recipes**:
   * **Fresh UOX** :
     * <sup>235</sup>U   :    3.25%w
     * <sup>238</sup>U   :   96.75%w
