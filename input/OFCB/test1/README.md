@@ -20,7 +20,7 @@ Reactor :
     * <sup>235</sup>U   :    3.25%w
     * <sup>238</sup>U   :   96.75%w
     * <sup>16</sup>O    :   TDB
-  * Used UOX @43.03 GWd/t (atomic):
+  * **Used UOX** @43.03 GWd/t (atomic):
     * <sup>234</sup>U   :   0.00026%
     * <sup>235</sup>U   :   0.52485%
     * <sup>236</sup>U   :   0.41405%
