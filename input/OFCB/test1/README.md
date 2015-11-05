@@ -19,7 +19,9 @@ Reactor :
   * **Fresh UOX** :
     * <sup>235</sup>U   :    3.25%w
     * <sup>238</sup>U   :   96.75%w
-    * <sup>16</sup>O    :   TDB
+    * <sup>16</sup>O    :   13.44%w \
+    * the %w are normalize to the quantity of uranium... but because the reactor fuel mass is given in oxyde metal, one provides also the corresponding oxygen quantity
+
   * **Used UOX** @43.03 GWd/t (atomic):
     * <sup>234</sup>U   :   0.00026%
     * <sup>235</sup>U   :   0.52485%

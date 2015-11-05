@@ -3,8 +3,8 @@
     "pwr_uox": {"attributes": {"recipe": true}, 
       "constraints": [ 
                     ["U235", 3.25],
-                    ["O16", 200], 
-                    ["U238", 96.75]], 
+                    ["U238", 96.75],
+                    ["O16", 13.44]],
       "metadata": {}
     }, 
     "spent_pwr_uox": 
