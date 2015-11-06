@@ -14,7 +14,6 @@ Reactor :
 * **Thermal Power**: 2875e6 W -- **Efficiency**: 34%,  
 * **Discharge burn-up** : 43.03 GWd/t -- Full Cycle length 3y, 
 * **Capacity factor**: 1, 
-* **Recipe sed**: REP900.dat from CLASS, fuelrecipe\STD900.dat
 * **Suggested recipes**:
   * **Fresh UOX** :
     * <sup>235</sup>U   :    3.25%w
