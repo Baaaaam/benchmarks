@@ -1,116 +1,125 @@
 <!-- 1 Source Source, 1 Sink Sink -->
 
 <simulation>
-    <control>
-        <duration>100</duration>
-        <startmonth>1</startmonth>
-        <startyear>2000</startyear>
-    </control>
+  <control>
+    <duration>100</duration>
+    <startmonth>1</startmonth>
+    <startyear>2000</startyear>
+  </control>
 
-    <archetypes>
-        <spec><lib>cycamore</lib><name>Sink</name></spec>
-        <spec><lib>cycamore</lib><name>Source</name></spec>
-        <spec><lib>cycamore</lib><name>Reactor</name></spec>
-        <spec><lib>cycamore</lib><name>Enrichment</name></spec>
-        <spec><lib>agents</lib><name>NullRegion</name></spec>
-        <spec><lib>agents</lib><name>NullInst</name></spec>
-    </archetypes>
+  <archetypes>
+    <spec><lib>cycamore</lib><name>Sink</name></spec>
+    <spec><lib>cycamore</lib><name>Source</name></spec>
+    <spec><lib>cycamore</lib><name>Reactor</name></spec>
+    <spec><lib>cycamore</lib><name>Enrichment</name></spec>
+  </archetypes>
 
-    <facility>
-        <name>SourceUOX</name>
-        <config>
-            <Source>
-            <outcommod>UOX</outcommod>
-            <outrecipe>UOX</outrecipe>
-            <throughput>1000</throughput>
-            </Source>
-        </config>
-    </facility>
+  <facility>
+    <name>SourceUOX</name>
+    <config>
+      <Source>
+        <outcommod>UOX</outcommod>
+        <outrecipe>UOX</outrecipe>
+        <throughput>1000</throughput>
+      </Source>
+    </config>
+  </facility>
 
-    <facility>
-        <name>Reactor</name>
-        <config>
-            <Reactor>
-            <fuel_inrecipes>    <val>UOX</val>        </fuel_inrecipes>
-            <fuel_outrecipes>    <val>SpentUOX</val>    </fuel_outrecipes>
-            <fuel_incommods>    <val>UOX</val>        </fuel_incommods>
-            <fuel_outcommods>    <val>SpentUOX</val>    </fuel_outcommods>
+  <facility>
+    <name>Reactor</name>
+    <config>
+      <Reactor>
+        <fuel_inrecipes>
+          <val>UOX</val>
+        </fuel_inrecipes>
+        <fuel_incommods>
+          <val>UOX</val>
+        </fuel_incommods>
 
-            <cycle_time>1</cycle_time>
-            <power_cap>965.16</power_cap>
-            <refuel_time>0</refuel_time>
-            <assem_size>27.3</assem_size>
-            <n_assem_core>3</n_assem_core>
-            <n_assem_spent>1</n_assem_spent>
-            <n_assem_batch>1</n_assem_batch>
-            </Reactor>
-        </config>
-    </facility>
+        <fuel_outrecipes>
+          <val>SpentUOX</val>
+        </fuel_outrecipes>
+        <fuel_outcommods>
+          <val>SpentUOX</val>
+        </fuel_outcommods>
 
-    <facility>
-        <name>Sink</name>
-        <config>
-            <Sink>
-            <in_commods>
-                <val>SpentUOX</val>
-            </in_commods>
-            <capacity>100000000</capacity>
-            </Sink>
-        </config>
-    </facility>
+        <cycle_time>1</cycle_time>
+        <power_cap>965.16</power_cap>
+        <refuel_time>0</refuel_time>
+        <assem_size>27.3</assem_size>
+        <n_assem_core>3</n_assem_core>
+        <n_assem_spent>1</n_assem_spent>
+        <n_assem_batch>1</n_assem_batch>
+      </Reactor>
+    </config>
+  </facility>
 
-    <region>
-        <name>SingleRegion</name>
-        <config><NullRegion/></config>
-        <institution>
-            <name>SingleInstitution</name>
-            <initialfacilitylist>
-            <entry>
-            <prototype>SourceUOX</prototype>
-                <number>1</number>
-            </entry>
-            <entry>
-                <prototype>Reactor</prototype>
-                <number>2</number>
-            </entry>
-            <entry>
-                <prototype>Sink</prototype>
-                <number>1</number>
-            </entry>
-            </initialfacilitylist> 
-            <config><NullInst/></config>
-        </institution>
-    </region>
+  <facility>
+    <name>Sink</name>
+    <config>
+      <Sink>
+        <in_commods>
+          <val>SpentUOX</val>
+        </in_commods>
+        <capacity>100000000</capacity>
+      </Sink>
+    </config>
+  </facility>
 
-    <recipe>
-        <name>UOX</name>
-        <basis>mass</basis>
-        <nuclide>
-            <id>922350000</id>
-            <comp>3.25</comp>
-        </nuclide>
-        <nuclide>
-            <id>922380000</id>
-            <comp>96.75</comp>
-        </nuclide>
-        <nuclide>
-            <id>80160000</id>
-            <comp>200</comp>
-        </nuclide>
-    </recipe>
+  <prototype>
+    <name>deployer</name>
+    <config>
+      <DeployInst>
+        <prototypes>
+          <val>SourceUOX</val>
+          <val>Reactor</val>
+          <val>Sink</val>
+        </prototypes>
 
-    <recipe>
-        <name>SpentUOX</name>
-        <basis>atom</basis>
-        <nuclide><id>922350000</id>    <comp>0.5248</comp></nuclide>
-        <nuclide><id>922350000</id>    <comp>89.3300</comp></nuclide>
-        <nuclide><id>942380000</id>    <comp>0.0229</comp></nuclide>
-        <nuclide><id>942390000</id>    <comp>0.5429</comp></nuclide>
-        <nuclide><id>942400000</id>    <comp>0.2472</comp></nuclide>    
-        <nuclide><id>942410000</id>    <comp>0.1592</comp></nuclide>
-        <nuclide><id>942420000</id>    <comp>0.0825</comp></nuclide>
-        <nuclide><id>952420000</id>    <comp>0.0040</comp></nuclide>
-        <nuclide><id>80160000</id>    <comp>200</comp></nuclide>
-    </recipe>
+        <build_times>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+        </build_times>
+
+        <n_build>
+          <val>1</vL>
+          <val>2</val>
+          <val>1</vL>
+        </n_build>
+      </DeployInst>
+    </config>
+  </prototype>
+
+  <recipe>
+    <name>UOX</name>
+    <basis>mass</basis>
+    <nuclide>
+      <id>922350000</id>
+      <comp>3.25</comp>
+    </nuclide>
+    <nuclide>
+      <id>922380000</id>
+      <comp>96.75</comp>
+    </nuclide>
+    <nuclide>
+      <id>80160000</id>
+      <comp>200</comp>
+    </nuclide>
+  </recipe>
+
+  <recipe>
+    <name>SpentUOX</name>
+    <basis>atom</basis>
+    <nuclide><id>922350000</id>    <comp>0.5248</comp></nuclide>
+    <nuclide><id>922350000</id>    <comp>89.3300</comp></nuclide>
+    <nuclide><id>942380000</id>    <comp>0.0229</comp></nuclide>
+    <nuclide><id>942390000</id>    <comp>0.5429</comp></nuclide>
+    <nuclide><id>942400000</id>    <comp>0.2472</comp></nuclide>
+    <nuclide><id>942410000</id>    <comp>0.1592</comp></nuclide>
+    <nuclide><id>942420000</id>    <comp>0.0825</comp></nuclide>
+    <nuclide><id>952420000</id>    <comp>0.0040</comp></nuclide>
+    <nuclide><id>80160000</id>    <comp>200</comp></nuclide>
+  </recipe>
 
 </simulation>
