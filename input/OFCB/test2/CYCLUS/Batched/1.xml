@@ -71,7 +71,7 @@
             </entry>
             <entry>
                 <prototype>Reactor</prototype>
-                <number>1</number>
+                <number>2</number>
             </entry>
             <entry>
                 <prototype>Sink</prototype>

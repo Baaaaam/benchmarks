@@ -79,7 +79,7 @@
     "attributes": {
       "grid": "year",
       "initialConditions": {
-        "lwr_reactor_power": 1,
+        "lwr_reactor_power": 2,
         "repository": 1
       },
       "demands": {}

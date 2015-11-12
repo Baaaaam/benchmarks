@@ -1,7 +1,7 @@
-Test 1 : Single reactor over 120 years
+Test 2 : Two reactor over 120 years
 =============================================
 
-120 year simulation, single reactor, fixed fuel recipe, 120 years operation to be defined: reactor power, fuel burnup and associated recipes, (re)fueling strategy
+120 year simulation, two reactor, fixed fuel recipe, 120 years operation to be defined: reactor power, fuel burnup and associated recipes, (re)fueling strategy
 
 Definition
 ----------------
