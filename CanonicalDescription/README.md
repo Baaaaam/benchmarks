@@ -10,10 +10,6 @@ Each test folder contain the specific input for the corresponding test.
 
 In each folder you will find a json file, with suppose to be a canonical description of the fuel cycle one try to describe.
 
-note: a json file is suppose to be a ccanonical description of the fuel cycle, allowing each user to build a script wich convert a json file in a input file of their own fuel cycle simulator. An exemple of a python script converting json file in xml CYCLUS input file can be found at the root of the repository (the src/tests/xml2json folders)
-
-<add link to json fiel desciption>
-
 
 #Generic test definition
 
