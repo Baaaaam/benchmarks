@@ -37,7 +37,7 @@ note: a json file is suppose to be a ccanonical description of the fuel cycle, a
 10. **120 year simulation, ten reactors, fixed fuel recipe, reactor lifetimes are staggered, with a new reactor shutting down/replaced each 10 years**
 
 
-#Reactor requirements to be defined/completed
+#Reactor requirements (to be defined/completed)
 * Physics models
   - Fuel Loading Model
   - Mean Cross Section Predictor
@@ -65,7 +65,7 @@ Define sets of important isotopes:
   * Fissile isotopes
 
 Define a notation for sets of similar facilities, e.g. all reactors, all fabrication, all storage
-  * $lm(i,l,tfinal) 
+  * ∑(i,l,tfinal) 
   * lLnm(i,l,tfinal) for Ln in {reactors, fabrication, storage}
   * total inventory as a function of time of the above isotopes
   * facility dependent inventory 
