@@ -8,8 +8,7 @@ To simplify exchange and comparison between different tool, We strongly recommen
 
 Each test folder contain the specific input for the corresponding test.
 
-In each folder you will find a json file, with suppose to be a canonical description of the fuel cycle one try to describe.
-
+In each folder you will find a json file[1], with suppose to be a canonical description of the fuel cycle one try to describe.
 
 #Generic test definition
 
@@ -84,6 +83,11 @@ Mathematical operation for comparisons:
       * radiotoxicity
       * information provided to end metric
 
+
+References
+---------------
+
+[1] the JSON format specification can be found in the [JSON\_format_specification.rst](../JSON_format_specification.rst) file
 
 
 #Past Benchmark Work
