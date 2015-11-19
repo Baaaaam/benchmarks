@@ -39,16 +39,16 @@ note: a json file is suppose to be a ccanonical description of the fuel cycle, a
 
 #Reactor requirements to be defined/completed
 * Physics models
-- Fuel Loading Model
-- Mean Cross Section Predictor
-- Bateman Solver
+  - Fuel Loading Model
+  - Mean Cross Section Predictor
+  - Bateman Solver
 * Reactor(s) (over specified to accommodate different code requirements)
-- Thermal power
-- Cycle length
-- Heavy Metal mass in core
-- Fuel burnup
-- Fresh fuel composition
-- Spent fuel composition
+  - Thermal power
+  - Cycle length
+  - Heavy Metal mass in core
+  - Fuel burnup
+  - Fresh fuel composition
+  - Spent fuel composition
 * Cooling Pool
 * Fabrication Plant
 * Separation Plant
