@@ -84,12 +84,12 @@ Mathematical operation for comparisons:
       * information provided to end metric
 
 
-References
----------------
-
-[1] the JSON format specification can be found in the [JSON\_format_specification.rst](../JSON_format_specification.rst) file
-
 
 #Past Benchmark Work
 
 * [ANS Summary](https://drive.google.com/file/d/0B6_Oqvcg8eP9TTJGdW44bGdlQTg/view?usp=sharing)
+
+
+#References
+
+[1] the JSON format specification can be found in the [JSON\_format_specification.rst](../JSON_format_specification.rst) file
