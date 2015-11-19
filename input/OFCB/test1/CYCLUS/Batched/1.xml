@@ -12,8 +12,6 @@
         <spec><lib>cycamore</lib><name>Source</name></spec>
         <spec><lib>cycamore</lib><name>Reactor</name></spec>
         <spec><lib>cycamore</lib><name>Enrichment</name></spec>
-        <spec><lib>agents</lib><name>NullRegion</name></spec>
-        <spec><lib>agents</lib><name>NullInst</name></spec>
     </archetypes>
 
     <facility>
@@ -59,28 +57,31 @@
         </config>
     </facility>
 
-    <region>
-        <name>SingleRegion</name>
-        <config><NullRegion/></config>
-        <institution>
-            <name>SingleInstitution</name>
-            <initialfacilitylist>
-            <entry>
-            <prototype>SourceUOX</prototype>
-                <number>1</number>
-            </entry>
-            <entry>
-                <prototype>Reactor</prototype>
-                <number>1</number>
-            </entry>
-            <entry>
-                <prototype>Sink</prototype>
-                <number>1</number>
-            </entry>
-            </initialfacilitylist> 
-            <config><NullInst/></config>
-        </institution>
-    </region>
+
+<prototype>
+  <name>deployer</name>
+  <config>
+    <DeployInst>
+      <prototypes>
+        <val>SourceUOX</val>
+        <val>Reactor</val>
+        <val>Sink</val>
+      </prototypes>
+
+      <build_times>
+        <val>1</val>
+        <val>1</val>
+        <val>1</val>
+      </build_times>
+
+      <n_build>
+        <val>1</vL>
+        <val>2</val>
+        <val>1</vL>
+      </n_build>
+    </DeployInst>
+  </config>
+</prototype>
 
     <recipe>
         <name>UOX</name>
