@@ -14,7 +14,7 @@ In support of a community of scholars who are developing software to simulate th
 Repository layout and use:
 -------------------------------------
 
-* [the main repository](https://github.com/cyclus/benchmarks) will hold only canonical problem definitions [jsn]_ and supporting information in an OFCB directory,
+* [the main repository](https://github.com/cyclus/benchmarks) will hold only canonical problem definitions[1] and supporting information in an OFCB directory,
 * each participating fuel cycle tool project should:
   - fork this repository,
   - create a directory for their code,
@@ -35,7 +35,7 @@ Important Link
 
 
 
-Citations
+References
 ---------------
 
-.. [jsn] the JSON format specification can be found in the [JSON\_format_specification.rst](JSON_format_specification.rst) file
+[1] the JSON format specification can be found in the [JSON\_format_specification.rst](JSON_format_specification.rst) file
