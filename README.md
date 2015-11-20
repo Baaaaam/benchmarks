@@ -9,7 +9,7 @@ It contains the specification file in different formats for the different test.
 In support of a community of scholars who are developing software to simulate the nuclear fuel cycle, this set of problems is a community generated list of scenarios that is intended to progress from simple problems to verify fundamental behavior through more complex problems to be used to validate overall system evolution.
 
 
-<h2 id="repo">Repository layout and use:</h2>
+<h2 id="repo">Repository layout and use</h2>
 
 * [the main repository](https://github.com/cyclus/benchmarks) will hold only canonical problem definitions [\[1\]](#r) and supporting information in an OFCB directory,
 * each participating fuel cycle tool project should:
