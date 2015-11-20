@@ -7,7 +7,7 @@ To simplify exchange and comparison between different tool, We strongly recommen
 
 Each test folder contain the specific input for the corresponding test.
 
-In each folder you will find a json file [[1]](#r), with suppose to be a canonical description of the fuel cycle one try to describe.
+In each folder you will find a json file [\[1\]](#r), with suppose to be a canonical description of the fuel cycle one try to describe.
 
 <h2 id="definition">Generic test definition</h2>
 <h3 id="decay">Problems based on decay only</h3>
@@ -77,7 +77,7 @@ Mathematical operation for comparisons:
   * provide “importance” weighting for each isotope (default = 1)
     * prior work: list A from thesis B
     * perhaps different weighting vectors for different metrics
-* reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami [[2]](#r)
+* reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami [\[2\]](#r)
       * decay heat
       * radiotoxicity
       * information provided to end metric
