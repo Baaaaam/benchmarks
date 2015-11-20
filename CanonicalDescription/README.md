@@ -61,8 +61,8 @@ Define sets of important isotopes:
   * Fissile isotopes
 
 Define a notation for sets of similar facilities, e.g. all reactors, all fabrication, all storage
-  * \sum_i m(i,l,tfinal) 
-  * <img src=".readme/sum2.jpg" alt="Equation not rendered" align="middle" height="45">  for Ln in {reactors, fabrication, storage}
+  * <img src=".readme/sum1.jpg" align="middle" height="45">
+  * <img src=".readme/sum2.jpg" align="middle" height="45">
   * total inventory as a function of time of the above isotopes
   * facility dependent inventory 
 
@@ -79,7 +79,7 @@ Mathematical operation for comparisons:
   * provide “importance” weighting for each isotope (default = 1)
     * prior work: list A from thesis B
     * perhaps different weighting vectors for different metrics
-      * reactivity (<img src=".readme/reactivity.jpg" align="middle" height="20"> vs. full sensitivity analysis a la Tsunami [\[2\]](#r))
+      * reactivity (<img src=".readme/reactivity.jpg" align="middle" height="25"> vs. full sensitivity analysis a la Tsunami [\[2\]](#r))
       * decay heat
       * radiotoxicity
       * information provided to end metric
