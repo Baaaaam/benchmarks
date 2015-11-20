@@ -60,8 +60,8 @@ Define sets of important isotopes:
   * Fissile isotopes
 
 Define a notation for sets of similar facilities, e.g. all reactors, all fabrication, all storage
-  * ∑ m(i,l,tfinal) 
-  * ∑ m(i,l,tfinal) i in Ln ( for Ln in {reactors, fabrication, storage})
+  * \sum_i m(i,l,tfinal) 
+  * <img src=".readme/sum2.png" alt="Equation not rendered" height="20">  for Ln in {reactors, fabrication, storage}
   * total inventory as a function of time of the above isotopes
   * facility dependent inventory 
 
