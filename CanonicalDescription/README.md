@@ -61,7 +61,7 @@ Define sets of important isotopes:
 
 Define a notation for sets of similar facilities, e.g. all reactors, all fabrication, all storage
   * \sum_i m(i,l,tfinal) 
-  * <img src=".readme/sum2.jpg" alt="Equation not rendered" height="30">  for Ln in {reactors, fabrication, storage}
+  * <img src=".readme/sum2.jpg" alt="Equation not rendered" height="35">  for Ln in {reactors, fabrication, storage}
   * total inventory as a function of time of the above isotopes
   * facility dependent inventory 
 
