@@ -78,7 +78,7 @@ Mathematical operation for comparisons:
   * provide “importance” weighting for each isotope (default = 1)
     * prior work: list A from thesis B
     * perhaps different weighting vectors for different metrics
-      * reactivity (nu*sigma_f - sigma_a vs. full sensitivity analysis a la Tsunami)
+      * reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="50"> vs. full sensitivity analysis a la Tsunami)
       * decay heat
       * radiotoxicity
       * information provided to end metric
