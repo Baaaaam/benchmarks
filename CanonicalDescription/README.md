@@ -7,17 +7,16 @@ To simplify exchange and comparison between different tool, We strongly recommen
 
 Each test folder contain the specific input for the corresponding test.
 
-In each folder you will find a json file[1], with suppose to be a canonical description of the fuel cycle one try to describe.
+In each folder you will find a json file[1](#references), with suppose to be a canonical description of the fuel cycle one try to describe.
 
 <h2 id="definition">Generic test definition</h2>
-
-## Problems based on decay only:
+<h3 id="decay">Problems based on decay only</h3>
 
 1. **Decay induced by heavy isotopes initial storage**
 2. **Decay induced by fission products initial storage**
 
 
-##Problems based on a once-through cycle:
+<h3 id="cycle">Problems based on a once-through cycle</h3>
 
 1. **120 year simulation, single reactor, fixed fuel recipe, 120 years operation** 
 2. **120 year simulation, two reactors, fixed fuel recipe, 120 years operation**
@@ -31,7 +30,8 @@ In each folder you will find a json file[1], with suppose to be a canonical desc
 10. **120 year simulation, ten reactors, fixed fuel recipe, reactor lifetimes are staggered, with a new reactor shutting down/replaced each 10 years**
 
 
-#Reactor requirements (to be defined/completed)
+<h2 id="canonical">Canonical definition (to be defined/completed)</h2>
+
 * Physics models
   - Fuel Loading Model
   - Mean Cross Section Predictor
@@ -49,7 +49,7 @@ In each folder you will find a json file[1], with suppose to be a canonical desc
 * Storage
 
 
-#Outputs for Comparison
+<h2 id="outputs">Outputs for Comparison</h2>
 The complete set of results is represented by the mass inventories as a function of time (t) at each location (l) in the fuel cycle, m(i,l,t).  For any comparison, a lower fidelity may be necessary.
 
 Define sets of important isotopes:
@@ -77,19 +77,18 @@ Mathematical operation for comparisons:
   * provide “importance” weighting for each isotope (default = 1)
     * prior work: list A from thesis B
     * perhaps different weighting vectors for different metrics
-      * reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami[2])
+* reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami[2](#references)
       * decay heat
       * radiotoxicity
       * information provided to end metric
 
 
 
-#Past Benchmark Work
-
+<h2 id="previous">Past Benchmark Work</h2>
 * [ANS Summary](https://drive.google.com/file/d/0B6_Oqvcg8eP9TTJGdW44bGdlQTg/view?usp=sharing)
 
 
-#References
+<h2 id="references">References</h2>
 
   * [1] the JSON format specification can be found in the [JSON\_format_specification.rst](../JSON_format_specification.rst) file.
   * [2] [TSUNAMI Tools for Sensitivity and UNcertainty Analysis Methodology Implementation](http://scale.ornl.gov/tsunami/).
