@@ -3,14 +3,13 @@
 This directory aims to hold the canonical problem definitons.
 To simplify exchange and comparison between different tool, We strongly recommend to use the same architeckture in the own tool directories...
 
-
-#Contains
+<h2 id="Contains">Contains</h2>
 
 Each test folder contain the specific input for the corresponding test.
 
 In each folder you will find a json file[1], with suppose to be a canonical description of the fuel cycle one try to describe.
 
-#Generic test definition
+<h2 id="definition">Generic test definition</h2>
 
 ## Problems based on decay only:
 
@@ -78,7 +77,7 @@ Mathematical operation for comparisons:
   * provide “importance” weighting for each isotope (default = 1)
     * prior work: list A from thesis B
     * perhaps different weighting vectors for different metrics
-      * reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami)
+      * reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami[2])
       * decay heat
       * radiotoxicity
       * information provided to end metric
