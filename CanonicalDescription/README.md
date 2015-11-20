@@ -9,7 +9,7 @@ Each test folder contain the specific input for the corresponding test.
 
 In each folder you will find a json file [1](#References), with suppose to be a canonical description of the fuel cycle one try to describe.
 
-    *   [Paragraphs and Line Breaks](#r)
+[Paragraphs and Line Breaks](#r)
 
 <h2 id="definition">Generic test definition</h2>
 <h3 id="decay">Problems based on decay only</h3>
