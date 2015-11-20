@@ -7,7 +7,7 @@ To simplify exchange and comparison between different tool, We strongly recommen
 
 Each test folder contain the specific input for the corresponding test.
 
-In each folder you will find a json file [[1]](#references), with suppose to be a canonical description of the fuel cycle one try to describe.
+In each folder you will find a json file ["[1]"](#r), with suppose to be a canonical description of the fuel cycle one try to describe.
 
 <h2 id="definition">Generic test definition</h2>
 <h3 id="decay">Problems based on decay only</h3>
@@ -77,7 +77,7 @@ Mathematical operation for comparisons:
   * provide “importance” weighting for each isotope (default = 1)
     * prior work: list A from thesis B
     * perhaps different weighting vectors for different metrics
-* reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami [[2]](#references)
+* reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami [[2]](#r)
       * decay heat
       * radiotoxicity
       * information provided to end metric
@@ -88,7 +88,7 @@ Mathematical operation for comparisons:
 * [ANS Summary](https://drive.google.com/file/d/0B6_Oqvcg8eP9TTJGdW44bGdlQTg/view?usp=sharing)
 
 
-<h2 id="references">References</h2>
+<h2 id="r">References</h2>
 
   * [1] the JSON format specification can be found in the [JSON\_format_specification.rst](../JSON_format_specification.rst) file.
   * [2] [TSUNAMI Tools for Sensitivity and UNcertainty Analysis Methodology Implementation](http://scale.ornl.gov/tsunami/).
