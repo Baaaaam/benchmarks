@@ -7,27 +7,27 @@ To simplify exchange and comparison between different tool, We strongly recommen
 
 Each test folder contain the specific input for the corresponding test.
 
-In each folder you will find a json file[[1]](#references), with suppose to be a canonical description of the fuel cycle one try to describe.
+In each folder you will find a json file [[1]](#references), with suppose to be a canonical description of the fuel cycle one try to describe.
 
 <h2 id="definition">Generic test definition</h2>
 <h3 id="decay">Problems based on decay only</h3>
 
-1. **Decay induced by heavy isotopes initial storage**
-2. **Decay induced by fission products initial storage**
+1. Decay induced by heavy isotopes initial storage
+2. Decay induced by fission products initial storage
 
 
 <h3 id="cycle">Problems based on a once-through cycle</h3>
 
-1. **120 year simulation, single reactor, fixed fuel recipe, 120 years operation** 
-2. **120 year simulation, two reactors, fixed fuel recipe, 120 years operation**
-3. **120 year simulation, ten reactors, fixed fuel recipe, 120 years operation**
-4. **120 year simulation, two reactors, fixed fuel recipe, first reactor operates for 120 years, second reactor starts at midpoint**
-5. **120 year simulation, ten reactors, fixed fuel recipe, a new reactor starts every 10 years and continues throughout simulation**
-6. **120 year simulation, single reactor, fixed fuel recipe, 60 years operation replaced by another reactor**
-7. **120 year simulation, two reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor**
-8. **120 year simulation, ten reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor**
-9. **120 year simulation, two reactors, fixed fuel recipe, reactor A: operates 20 years, replaced by 60 year reactor and another 60 year reactor, reactor B: operates 40 years, replaced by 60 year reactor and another 60 year reactor**
-10. **120 year simulation, ten reactors, fixed fuel recipe, reactor lifetimes are staggered, with a new reactor shutting down/replaced each 10 years**
+1. 120 year simulation, single reactor, fixed fuel recipe, 120 years operation, 
+2. 120 year simulation, two reactors, fixed fuel recipe, 120 years operation,
+3. 120 year simulation, ten reactors, fixed fuel recipe, 120 years operation,
+4. 120 year simulation, two reactors, fixed fuel recipe, first reactor operates for 120 years, second reactor starts at midpoint,
+5. 120 year simulation, ten reactors, fixed fuel recipe, a new reactor starts every 10 years and continues throughout simulation,
+6. 120 year simulation, single reactor, fixed fuel recipe, 60 years operation replaced by another reactor,
+7. 120 year simulation, two reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor,
+8. 120 year simulation, ten reactors, fixed fuel recipe, each has 60 years operation replaced by another reactor,
+9. 120 year simulation, two reactors, fixed fuel recipe, reactor A: operates 20 years, replaced by 60 year reactor and another 60 year reactor, reactor B: operates 40 years, replaced by 60 year reactor and another 60 year reactor,
+10. 120 year simulation, ten reactors, fixed fuel recipe, reactor lifetimes are staggered, with a new reactor shutting down/replaced each 10 years.
 
 
 <h2 id="canonical">Canonical definition (to be defined/completed)</h2>
@@ -77,7 +77,7 @@ Mathematical operation for comparisons:
   * provide “importance” weighting for each isotope (default = 1)
     * prior work: list A from thesis B
     * perhaps different weighting vectors for different metrics
-* reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami[[2]](#references)
+* reactivity (<img src=".readme/reactivity.jpg" alt="Equation not rendered" height="15"> vs. full sensitivity analysis a la Tsunami [[2]](#references)
       * decay heat
       * radiotoxicity
       * information provided to end metric
