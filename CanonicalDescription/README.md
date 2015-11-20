@@ -92,5 +92,5 @@ Mathematical operation for comparisons:
 
 #References
 
-[1] the JSON format specification can be found in the [JSON\_format_specification.rst](../JSON_format_specification.rst) file
-[2] [TSUNAMI Tools for Sensitivity and UNcertainty Analysis Methodology Implementation](http://scale.ornl.gov/tsunami/)
+  [1] the JSON format specification can be found in the [JSON\_format_specification.rst](../JSON_format_specification.rst) file.
+  [2] [TSUNAMI Tools for Sensitivity and UNcertainty Analysis Methodology Implementation](http://scale.ornl.gov/tsunami/)
