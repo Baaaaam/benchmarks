@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<Aliases/>
+<Preferences>
+<defaultServer value="http://cycrun.fuelcycle.org"/>
+<servers current="0">
+<server>local</server>
+<server>http://cycrun.fuelcycle.org</server>
+</servers>
+</Preferences>
+<Jobs>
+<job alias="#2cd4" datafile="/home/mouginot/cyclist/data/2cd492a1ae764adebda90c733f8c6eef/cyclus.sqlite" id="2cd492a1ae764adebda90c733f8c6eef" status="READY" url="http://cycrun.fuelcycle.org"/>
+</Jobs>
+<Perspectives current="0">
+<Perspective id="0" name="Scenario Builder">
+<workspace>
+<tables/>
+<simulations/>
+<filters/>
+<view/>
+<Tool height="-1.0" id="edu.utexas.cycic.Cycic" name="Cycic" width="-1.0" x="0.0" y="0.0"/>
+<Tool height="-1.0" id="edu.utexas.cycic.Region Corral" name="Region Corral" width="-1.0" x="161.0" y="364.0"/>
+<Tool height="-1.0" id="edu.utexas.cycic.Region Corral" name="Region Corral" width="-1.0" x="252.0" y="598.0"/>
+</workspace>
+<tools-pos values="[0.5009727626459144]"/>
+</Perspective>
+<Perspective id="1" name="Data Exploration">
+<workspace>
+<tables/>
+<simulations/>
+<filters/>
+<view/>
+</workspace>
+<tools-pos values="[0.13910505836575876, 0.3745136186770428, 0.5359922178988327, 0.6011673151750972]"/>
+</Perspective>
+</Perspectives>
+<main-window>
+<geom height="1056.0" width="1920.0" x="5760.0" y="24.0"/>
+<sp-pos values="[0.08342022940563086]"/>
+</main-window>
+</root>
