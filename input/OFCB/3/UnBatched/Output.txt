@@ -1199,7 +1199,7 @@ Time[month],reactor_In[kg],Reactor_Out[kg],
 1197,328000,327180,
 1198,328000,327180,
 1199,328000,327180,
-1200,0,0,
+1200,328820,328000,
 
 
 Spent Fuel Inventories,

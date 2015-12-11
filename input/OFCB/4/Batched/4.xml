@@ -1,87 +1,93 @@
 <!-- 1 Source Source, 1 Sink Sink -->
 
 <simulation>
+    <schematype>flat</schematype>
     <control>
         <duration>1440</duration>
         <startmonth>1</startmonth>
         <startyear>0</startyear>
-   </control>
+    </control>
 
     <archetypes>
-        <spec><lib>cycamore</lib><name>Sink</name></spec>
-        <spec><lib>cycamore</lib><name>Source</name></spec>
-        <spec><lib>cycamore</lib><name>Reactor</name></spec>
-        <spec><lib>cycamore</lib><name>Enrichment</name></spec>
-        <spec><lib>agents</lib><name>NullRegion</name></spec>
-        <spec><lib>agents</lib><name>NullInst</name></spec>
+        <spec> <lib>cycamore</lib> <name>Source</name></spec>
+        <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
+        <spec> <lib>cycamore</lib> <name>Sink</name></spec>
+        <spec> <lib>cycamore</lib> <name>Reactor</name> </spec>
     </archetypes>
 
-    <facility>
+
+    <prototype>
         <name>SourceUOX</name>
         <config>
             <Source>
-            <outcommod>UOX</outcommod>
-            <outrecipe>UOX</outrecipe>
-            <throughput>1000</throughput>
+                <outcommod>UOX</outcommod>
+                <outrecipe>UOX</outrecipe>
+                <throughput>1000</throughput>
             </Source>
         </config>
-    </facility>
+    </prototype>
 
-
-    <facility>
+    <prototype>
         <name>Reactor</name>
         <config>
             <Reactor>
-            <fuel_inrecipes>    <val>UOX</val>        </fuel_inrecipes>
-            <fuel_outrecipes>    <val>SpentUOX</val>    </fuel_outrecipes>
-            <fuel_incommods>    <val>UOX</val>        </fuel_incommods>
-            <fuel_outcommods>    <val>SpentUOX</val>    </fuel_outcommods>
+                <fuel_inrecipes>    <val>UOX</val>      </fuel_inrecipes>
+                <fuel_outrecipes>   <val>SpentUOX</val> </fuel_outrecipes>
+                <fuel_incommods>    <val>UOX</val>      </fuel_incommods>
+                <fuel_outcommods>   <val>SpentUOX</val> </fuel_outcommods>
 
-            <cycle_time>1</cycle_time>
-            <power_cap>965.16</power_cap>
-            <refuel_time>0</refuel_time>
-            <assem_size>27.3</assem_size>
-            <n_assem_core>3</n_assem_core>
-            <n_assem_spent>1</n_assem_spent>
-            <n_assem_batch>1</n_assem_batch>
+                <cycle_time>1</cycle_time>
+                <power_cap>965.16</power_cap>
+                <refuel_time>0</refuel_time>
+                <assem_size>27.3</assem_size>
+                <n_assem_core>3</n_assem_core>
+                <n_assem_spent>1</n_assem_spent>
+                <n_assem_batch>1</n_assem_batch>
             </Reactor>
         </config>
-    </facility>
+    </prototype>
 
-    <facility>
+    <prototype>
         <name>Sink</name>
         <config>
             <Sink>
-            <in_commods>
-                <val>SpentUOX</val>
-            </in_commods>
-            <capacity>100000000</capacity>
+                <in_commods>
+                    <val>SpentUOX</val>
+                </in_commods>
+                <capacity>100000000</capacity>
             </Sink>
         </config>
-    </facility>
+    </prototype>
 
-    <region>
-        <name>SingleRegion</name>
-        <config><NullRegion/></config>
-        <institution>
-            <name>SingleInstitution</name>
-            <initialfacilitylist>
-            <entry>
-            <prototype>SourceUOX</prototype>
-                <number>1</number>
-            </entry>
-            <entry>
-                <prototype>Reactor</prototype>
-                <number>1</number>
-            </entry>
-            <entry>
-                <prototype>Sink</prototype>
-                <number>1</number>
-            </entry>
-            </initialfacilitylist> 
-            <config><NullInst/></config>
-        </institution>
-    </region>
+    <prototype>
+        <name>deployer</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>SourceUOX</val>
+                    <val>Sink</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                </prototypes>
+
+                <build_times>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>720</val>
+                </build_times>
+
+                <n_build>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+
+    <agent> <name>myDeployer</name> <prototype>deployer</prototype> </agent>
 
     <recipe>
         <name>UOX</name>
@@ -124,10 +130,10 @@
         <nuclide><id>962430000</id>    <comp>0.0001</comp></nuclide>
         <nuclide><id>962440000</id>    <comp>0.0077</comp></nuclide>
         <nuclide><id>962450000</id>    <comp>0.0005</comp></nuclide>
-
+        
         <nuclide><id>80160000</id>    <comp>200</comp></nuclide>
     </recipe>
-
+    
 </simulation>
 
 
