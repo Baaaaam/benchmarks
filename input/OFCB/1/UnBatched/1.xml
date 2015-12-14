@@ -34,7 +34,7 @@
                 <fuel_incommods>    <val>UOX</val>        </fuel_incommods>
                 <fuel_outcommods>    <val>SpentUOX</val>    </fuel_outcommods>
 
-                <cycle_time>3</cycle_time>
+                <cycle_time>36</cycle_time>
                 <power_cap>965.16</power_cap>
                 <refuel_time>0</refuel_time>
                 <assem_size>82</assem_size>
