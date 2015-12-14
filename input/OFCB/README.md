@@ -37,7 +37,7 @@ Each test folder contain the specific input for the corresponding test.
 
 In each folder you will find:
 The input file for the CYCLUS simulation tool, as wel as the corresponding results.
-Up to now to result have been generated using the [CYCLUS2CVS tools](https://github.com/Baaaaam/CYCLUS2FCO/tree/CYCLUStoCVS).
+Up to now to result have been generated using the [CYCLUS2CSV tools](https://github.com/Baaaaam/CYCLUS2FCO/tree/CYCLUStoCSV).
 
 note: a json file is suppose to be a ccanonical description of the fuel cycle, allowing each user to build a script wich convert a json file in a input file of their own fuel cycle simulator. An exemple of a python script converting json file in xml CYCLUS input file can be found at the root of the repository (the src/tests/xml2json folders)
 
