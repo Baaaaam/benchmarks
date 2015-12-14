@@ -29,10 +29,10 @@
         <name>Reactor</name>
         <config>
             <Reactor>
-                <fuel_inrecipes>    <val>UOX</val>        </fuel_inrecipes>
-                <fuel_outrecipes>    <val>SpentUOX</val>    </fuel_outrecipes>
-                <fuel_incommods>    <val>UOX</val>        </fuel_incommods>
-                <fuel_outcommods>    <val>SpentUOX</val>    </fuel_outcommods>
+                <fuel_inrecipes><val>UOX</val></fuel_inrecipes>
+                <fuel_outrecipes><val>SpentUOX</val></fuel_outrecipes>
+                <fuel_incommods><val>UOX</val></fuel_incommods>
+                <fuel_outcommods><val>SpentUOX</val></fuel_outcommods>
 
                 <cycle_time>36</cycle_time>
                 <power_cap>965.16</power_cap>
@@ -86,7 +86,7 @@
         </config>
     </prototype>
 
-    <agent> <name>myDeployer</name> <prototype>deployer</prototype> </agent>
+    <agent> <name>FacilityDeployer</name> <prototype>deployer</prototype> </agent>
 
 
 
@@ -136,5 +136,5 @@
         
         <nuclide><id>80160000</id>    <comp>200</comp></nuclide>
     </recipe>
-
+    
 </simulation>
