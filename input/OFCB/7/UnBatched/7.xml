@@ -27,6 +27,7 @@
 
     <prototype>
         <name>Reactor</name>
+        <lifetime>720</lifetime>
         <config>
             <Reactor>
                 <fuel_inrecipes><val>UOX</val></fuel_inrecipes>
@@ -67,55 +68,24 @@
                     <val>Sink</val>
                     <val>Reactor</val>
                     <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
-                    <val>Reactor</val>
                 </prototypes>
 
                 <build_times>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
-                    <val>121</val>
-                    <val>241</val>
-                    <val>361</val>
-                    <val>481</val>
-                    <val>601</val>
                     <val>721</val>
-                    <val>841</val>
-                    <val>961</val>
-                    <val>1081</val>
-                    <val>1201</val>
-                    <val>1321</val>
                 </build_times>
 
                 <n_build>
                     <val>1</val>
                     <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
+                    <val>2</val>
+                    <val>2</val>
                 </n_build>
             </DeployInst>
         </config>
     </prototype>
-
 
     <agent> <name>FacilityDeployer</name> <prototype>deployer</prototype> </agent>
 
