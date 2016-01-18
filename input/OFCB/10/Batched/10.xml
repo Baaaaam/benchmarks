@@ -1,0 +1,236 @@
+<simulation>
+    <schematype>flat</schematype>
+    <control>
+        <duration>1440</duration>
+        <startmonth>1</startmonth>
+        <startyear>0</startyear>
+    </control>
+
+    <archetypes>
+        <spec> <lib>cycamore</lib> <name>Source</name></spec>
+        <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
+        <spec> <lib>cycamore</lib> <name>Sink</name></spec>
+        <spec> <lib>cycamore</lib> <name>Reactor</name> </spec>
+    </archetypes>
+
+
+    <prototype>
+        <name>SourceUOX</name>
+        <config>
+            <Source>
+                <outcommod>UOX</outcommod>
+                <outrecipe>UOX</outrecipe>
+                <throughput>1000</throughput>
+            </Source>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>Reactor</name>
+        <lifetime>720</lifetime>
+        <config>
+            <Reactor>
+                <fuel_inrecipes><val>UOX</val></fuel_inrecipes>
+                <fuel_outrecipes><val>SpentUOX</val></fuel_outrecipes>
+                <fuel_incommods><val>UOX</val></fuel_incommods>
+                <fuel_outcommods><val>SpentUOX</val></fuel_outcommods>
+
+                <cycle_time>12</cycle_time>
+                <power_cap>965.16</power_cap>
+                <refuel_time>0</refuel_time>
+                <assem_size>27.3</assem_size>
+                <n_assem_core>3</n_assem_core>
+                <n_assem_spent>1</n_assem_spent>
+                <n_assem_batch>1</n_assem_batch>
+            </Reactor>
+        </config>
+    </prototype>
+
+
+
+    <prototype>
+        <name>Sink</name>
+        <config>
+            <Sink>
+                <in_commods>
+                    <val>SpentUOX</val>
+                </in_commods>
+                <capacity>100000000</capacity>
+            </Sink>
+        </config>
+    </prototype>
+
+
+
+    <prototype>
+        <name>deployer</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>SourceUOX</val>
+                    <val>Sink</val>
+
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+                    <val>Reactor</val>
+
+                    <val>Reactor</val>
+                </prototypes>
+
+                <build_times>
+                    <val>1</val>
+                    <val>1</val>
+
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+
+                    <val>121</val>
+                    <val>241</val>
+                    <val>361</val>
+                    <val>481</val>
+                    <val>601</val>
+                    <val>721</val>
+                    <val>841</val>
+                    <val>961</val>
+                    <val>1081</val>
+                    <val>1201</val>
+
+                    <val>1321</val>
+                </build_times>
+
+                <n_build>
+                    <val>1</val>
+                    <val>1</val>
+
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+
+                    <val>1</val>
+                </n_build>
+                
+                <lifetimes>
+                    <val>1440</val>
+                    <val>1440</val>
+
+                    <val>120</val>
+                    <val>240</val>
+                    <val>360</val>
+                    <val>480</val>
+                    <val>600</val>
+                    <val>720</val>
+                    <val>840</val>
+                    <val>960</val>
+                    <val>1080</val>
+                    <val>1200</val>
+
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+                    <val>1200</val>
+
+                    <val>1200</val>
+                </lifetimes>
+
+            </DeployInst>
+        </config>
+    </prototype>
+
+    <agent> <name>FacilityDeployer</name> <prototype>deployer</prototype> </agent>
+
+    <recipe>
+        <name>UOX</name>
+        <basis>mass</basis>
+        <nuclide>
+            <id>922350000</id>
+            <comp>3.25</comp>
+        </nuclide>
+        <nuclide>
+            <id>922380000</id>
+            <comp>96.75</comp>
+        </nuclide>
+        <nuclide>
+            <id>80160000</id>
+            <comp>200</comp>
+        </nuclide>
+    </recipe>
+
+    <recipe>
+        <name>SpentUOX</name>
+        <basis>atom</basis>
+        <nuclide><id>922350000</id>    <comp>0.0003</comp></nuclide>
+        <nuclide><id>922350000</id>    <comp>0.5248</comp></nuclide>
+        <nuclide><id>922360000</id>    <comp>0.4140</comp></nuclide>
+        <nuclide><id>922380000</id>    <comp>89.3300</comp></nuclide>
+
+        <nuclide><id>932370000</id>    <comp>0.0526</comp></nuclide>
+
+        <nuclide><id>942380000</id>    <comp>0.0229</comp></nuclide>
+        <nuclide><id>942390000</id>    <comp>0.5429</comp></nuclide>
+        <nuclide><id>942400000</id>    <comp>0.2472</comp></nuclide>
+        <nuclide><id>942410000</id>    <comp>0.1592</comp></nuclide>
+        <nuclide><id>942420000</id>    <comp>0.0825</comp></nuclide>
+
+        <nuclide><id>952410000</id>    <comp>0.0040</comp></nuclide>
+        <nuclide><id>952420000</id>    <comp>0.0001</comp></nuclide>
+        <nuclide><id>952430000</id>    <comp>0.0189</comp></nuclide>
+        
+        <nuclide><id>962420000</id>    <comp>0.0021</comp></nuclide>
+        <nuclide><id>962430000</id>    <comp>0.0001</comp></nuclide>
+        <nuclide><id>962440000</id>    <comp>0.0077</comp></nuclide>
+        <nuclide><id>962450000</id>    <comp>0.0005</comp></nuclide>
+        
+        <nuclide><id>80160000</id>    <comp>200</comp></nuclide>
+    </recipe>
+    
+</simulation>
