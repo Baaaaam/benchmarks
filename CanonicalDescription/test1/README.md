@@ -12,7 +12,7 @@ Reactor :
 * **Fuel**: UOX 3.25%w enriched uranium, 
 * **Mass**: 82 tons (Oxyde Metal),
 * **Thermal Power**: 2875e6 W -- **Efficiency**: 34%,  
-* **Discharge burn-up** : 43.03 GWd/t -- Full Cycle length 3y, 
+* **Discharge burn-up** : 43.03 GWd/tonne -- Full Cycle length 3y, 
 * **Capacity factor**: 1, 
 * **Suggested recipes**:
   * **Fresh UOX** :
@@ -21,7 +21,7 @@ Reactor :
     * <sup>16</sup>O    :   13.44%w \
     * the %w are normalize to the quantity of uranium... but because the reactor fuel mass is given in oxyde metal, one provides also the corresponding oxygen quantity
 
-  * **Used UOX** @43.03 GWd/t (atomic):
+  * **Used UOX** @43.03 GWd/tonne (atomic):
     * <sup>234</sup>U   :   0.00026%
     * <sup>235</sup>U   :   0.52485%
     * <sup>236</sup>U   :   0.41405%
