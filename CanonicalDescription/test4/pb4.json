@@ -124,8 +124,7 @@
           "period1": {
             "startTime": 0,
             "startValue": 1,
-            "slope": 0.1,
-            "stopTime": 11
+            "slope": 0.017,
           }
         }
       }

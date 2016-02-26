@@ -1,11 +1,9 @@
-Tests 3 : 10 reactors over 120 years
-=============================================
-
-120 year simulation, 10 reactors, fixed fuel recipe, 120 years operation to be defined: reactor power, fuel burnup and associated recipes, (re)fueling strategy
-
+Tests 3 : 2 reactors, 1 deployed at the start 1 at midpoint over 120 years
+===========================================================================
+120 year simulation, two reactors, fixed fuel recipe, first reactor operates for 120 years, second reactor starts at midpoint
 Definition
 ----------------
-120 year simulation, 10 reactors, fixed fuel recipe, 120 years operation
+120 year simulation, 2 reactors, fixed fuel recipe, 120 years operation
 
 Reactor : 
 * Type: LWR, 
