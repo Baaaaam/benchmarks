@@ -20,7 +20,7 @@
             <Source>
                 <outcommod>UOX</outcommod>
                 <outrecipe>UOX</outrecipe>
-                <throughput>1000</throughput>
+                <throughput>1e100</throughput>
             </Source>
         </config>
     </prototype>
