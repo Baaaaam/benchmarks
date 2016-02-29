@@ -3,3 +3,7 @@
 *#
 #*
 *.html
+*.root
+CLASS_exec
+CLASS_TimeStep
+*.log
