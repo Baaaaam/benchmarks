@@ -17,17 +17,18 @@ int main(int argc, char** argv)
 
 
 
-	CLASSLogger* Logger	= new CLASSLogger("CLASS_OUTPUT.log",0,2);
+	CLASSLogger* Logger	= new CLASSLogger("CLASS_OUTPUT.log",1,2);
 	Scenario* gCLASS	= new Scenario(Logger);
 	gCLASS->SetStockManagement(true);
 	gCLASS->SetTimeStep(cYear/12.);
 	gCLASS->SetZAIThreshold(90);
+  gCLASS->SetSoberTerminalOutput();
 
 //#######################################################################################################
 //########################### BASES #####################################################################
 //#######################################################################################################
 
-	string s_BASE_PATH 	= "/home/mouginot/App/local/CLASS/DATA_BASES/";
+	string s_BASE_PATH 	= "/Users/mouginot/work/App/CLASS/Database/";
 
 	string s_DECAY_BASE	= s_BASE_PATH + "DECAY/ALL/Decay.idx";
 
