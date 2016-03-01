@@ -66,7 +66,7 @@ int main(int argc, char** argv)
 
 
 
-	Reactor* PWRUOX	 = new Reactor(gCLASS->GetLog(), STD900, StockSPENTUOX, 0, 120*cYear, 2838.7e6, 82, 43.03, 1);
+  Reactor* PWRUOX	 = new Reactor(gCLASS->GetLog(), STD900, StockSPENTUOX, 0, 120*cYear,3220356176.63598, 82, 43.03, 1);
 	gCLASS->Add(PWRUOX);
 
 	gCLASS->Evolution(cYear*120);
