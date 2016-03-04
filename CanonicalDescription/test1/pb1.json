@@ -11,7 +11,7 @@
     {"attributes": {"recipe": false}, 
       "constraints": [], 
       "metadata": {
-        "suggestedComposition": [
+        "suggested_composition": [
                                 ["U234", 0.00026], 
                                 ["U235", 0.52485], 
                                 ["U236", 0.41405], 
@@ -38,29 +38,29 @@
     "lwr_reactor": {
       "metadata": {"type": "reactor"},
       "attributes": {
-        "thermalPower": ["float", "GWt"],
+        "thermal_power": ["float", "GWt"],
         "efficiency": ["float", "percent"],
-        "cycleLength": ["int", "EFPD"],
-        "capacityFactor": ["float", "percent"],
+        "cycle_length": ["int", "EFPD"],
+        "capacity_factor": ["float", "percent"],
         "lifetime":  ["int", "year"],
         "fuels":  ["nea_pwr_uox"],
         "batches": ["int", "", ["pwr_uox"]],
-        "coreLoading": ["float", "tHM", ["pwr_uox"]],
+        "core_Loading": ["float", "tHM", ["pwr_uox"]],
         "burnup": ["float", "GWd/tHM", ["pwr_uox"]],
-        "storageTime": ["int", "year", ["pwr_uox"]],
-        "coolingTime": ["int", "year", ["pwr_uox"]]
+        "storage_time": ["int", "year", ["pwr_uox"]],
+        "cooling_time": ["int", "year", ["pwr_uox"]]
       },
       "constraints": [
-                      ["thermalPower", 2.8387],
+                      ["thermal_power", 2.8387],
                       ["efficiency", 34.0],
-                      ["cycleLength", 365.25],
-                      ["capacityFactor", 100],
+                      ["cycle+length", 365.25],
+                      ["capacity_factor", 100],
                       ["lifetime", 120],
                       ["batches", 3, "pwr_uox"],
-                      ["coreLoading", 82, "pwr_uox"],
+                      ["core_Loading", 82, "pwr_uox"],
                       ["burnup", 43.03, "pwr_uox"],
-                      ["storageTime", 0, "pwr_uox"],
-                      ["coolingTime", 0, "pwr_uox"]],
+                      ["storage_time", 0, "pwr_uox"],
+                      ["cooling_time", 0, "pwr_uox"]],
       "inputs": ["pwr_uox"],
       "outputs": ["spent_pwr_uox"]
     },
@@ -75,10 +75,10 @@
     }
   },
   
-  "fuelCycle": {
+  "fuel_cycle": {
     "attributes": {
       "grid": "year",
-      "initialConditions": {
+      "initial_conditions": {
         "lwr_reactor_power": 1,
         "repository": 1
       },
