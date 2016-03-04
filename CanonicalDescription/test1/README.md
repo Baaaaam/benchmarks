@@ -10,7 +10,7 @@ Definition
 Reactor : 
 * Type: LWR, 
 * **Fuel**: UOX 3.25%w enriched uranium, 
-* **Mass**: 82 tons (Oxyde Metal),
+* **Mass**: 82 tons (Oxide Metal),
 * **Thermal Power**: 2875e6 W -- **Efficiency**: 34%,  
 * **Discharge burn-up** : 43.03 GWd/tonne -- Full Cycle length 3y, 
 * **Capacity factor**: 1, 
@@ -19,7 +19,7 @@ Reactor :
     * <sup>235</sup>U   :    3.25%w
     * <sup>238</sup>U   :   96.75%w
     * <sup>16</sup>O    :   13.44%w \
-    * the %w are normalize to the quantity of uranium... but because the reactor fuel mass is given in oxyde metal, one provides also the corresponding oxygen quantity
+    * the %w are normalize to the quantity of uranium... but because the reactor fuel mass is given in Oxide metal, one provides also the corresponding oxygen quantity
 
   * **Used UOX** @43.03 GWd/tonne (atomic):
     * <sup>234</sup>U   :   0.00026%
