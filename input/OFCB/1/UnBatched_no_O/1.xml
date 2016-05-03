@@ -93,11 +93,7 @@
       <id>922380000</id>
       <comp>96.75</comp>
     </nuclide>
-    <nuclide>
-      <id>80160000</id>
-      <comp>13.44</comp>
-    </nuclide>
-  </recipe>
+   </recipe>
   
   <recipe>
     <name>SpentUOX</name>
@@ -118,7 +114,6 @@
     <nuclide><id>60120000</id> <comp>1458878207221560000</comp></nuclide>
     <nuclide><id>70150000</id> <comp>10078288506939000000</comp></nuclide>
     <nuclide><id>70140000</id> <comp>1676594439520260</comp></nuclide>
-    <nuclide><id>80160000</id> <comp>228684747450379000000000000</comp></nuclide>
     <nuclide><id>80180000</id> <comp>727164538322944</comp></nuclide>
     <nuclide><id>80170000</id> <comp>113834057304765000000</comp></nuclide>
     <nuclide><id>100210000</id><comp>2554707845434050000</comp></nuclide>
