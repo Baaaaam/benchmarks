@@ -10,6 +10,7 @@
         <spec> <lib>cycamore</lib> <name>Source</name></spec>
         <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
         <spec> <lib>cycamore</lib> <name>Sink</name></spec>
+	<spec><lib>cycamore</lib><name>Storage</name></spec>
         <spec> <lib>cycamore</lib> <name>Reactor</name> </spec>
     </archetypes>
 
@@ -109,32 +110,616 @@
         </nuclide>
     </recipe>
 
+
     <recipe>
-        <name>SpentUOX</name>
-        <basis>atom</basis>
-        <nuclide><id>922350000</id>    <comp>0.0003</comp></nuclide>
-        <nuclide><id>922350000</id>    <comp>0.5248</comp></nuclide>
-        <nuclide><id>922360000</id>    <comp>0.4140</comp></nuclide>
-        <nuclide><id>922380000</id>    <comp>89.3300</comp></nuclide>
-
-        <nuclide><id>932370000</id>    <comp>0.0526</comp></nuclide>
-
-        <nuclide><id>942380000</id>    <comp>0.0229</comp></nuclide>
-        <nuclide><id>942390000</id>    <comp>0.5429</comp></nuclide>
-        <nuclide><id>942400000</id>    <comp>0.2472</comp></nuclide>
-        <nuclide><id>942410000</id>    <comp>0.1592</comp></nuclide>
-        <nuclide><id>942420000</id>    <comp>0.0825</comp></nuclide>
-
-        <nuclide><id>952410000</id>    <comp>0.0040</comp></nuclide>
-        <nuclide><id>952420000</id>    <comp>0.0001</comp></nuclide>
-        <nuclide><id>952430000</id>    <comp>0.0189</comp></nuclide>
-
-        <nuclide><id>962420000</id>    <comp>0.0021</comp></nuclide>
-        <nuclide><id>962430000</id>    <comp>0.0001</comp></nuclide>
-        <nuclide><id>962440000</id>    <comp>0.0077</comp></nuclide>
-        <nuclide><id>962450000</id>    <comp>0.0005</comp></nuclide>
-        
-        <nuclide><id>80160000</id>    <comp>200</comp></nuclide>
+      <name>SpentUOX</name>
+      <basis>atom</basis>
+      <nuclide><id>10010000</id> <comp>223803322441805000000</comp></nuclide>
+      <nuclide><id>10020000</id> <comp>61150003283785400000</comp></nuclide>
+      <nuclide><id>10030000</id> <comp>572786131666838000000</comp></nuclide>
+      <nuclide><id>20040000</id> <comp>37548948792586100000000</comp></nuclide>
+      <nuclide><id>20030000</id> <comp>48374302691632900000</comp></nuclide>
+      <nuclide><id>30070000</id> <comp>15394111667398800000</comp></nuclide>
+      <nuclide><id>30060000</id> <comp>141189370042158000000</comp></nuclide>
+      <nuclide><id>40100000</id> <comp>32000775753025200000</comp></nuclide>
+      <nuclide><id>40090000</id> <comp>4622059910635450000</comp></nuclide>
+      <nuclide><id>50110000</id> <comp>1307742225085500000</comp></nuclide>
+      <nuclide><id>50100000</id> <comp>579276257984774000</comp></nuclide>
+      <nuclide><id>60140000</id> <comp>9507308820100020000</comp></nuclide>
+      <nuclide><id>60130000</id> <comp>23994935620250100000000</comp></nuclide>
+      <nuclide><id>60120000</id> <comp>1458878207221560000</comp></nuclide>
+      <nuclide><id>70150000</id> <comp>10078288506939000000</comp></nuclide>
+      <nuclide><id>70140000</id> <comp>1676594439520260</comp></nuclide>
+      <nuclide><id>80160000</id> <comp>228684747450379000000000000</comp></nuclide>
+      <nuclide><id>80180000</id> <comp>727164538322944</comp></nuclide>
+      <nuclide><id>80170000</id> <comp>113834057304765000000</comp></nuclide>
+      <nuclide><id>100210000</id><comp>2554707845434050000</comp></nuclide>
+      <nuclide><id>240540000</id><comp>19255.36328125</comp></nuclide>
+      <nuclide><id>240530000</id><comp>1211.3692626953</comp></nuclide>
+      <nuclide><id>240520000</id><comp>1.8601779938</comp></nuclide>
+      <nuclide><id>250550000</id><comp>524766304</comp></nuclide>
+      <nuclide><id>250560000</id><comp>1970024.5</comp></nuclide>
+      <nuclide><id>250540000</id><comp>206.333694458</comp></nuclide>
+      <nuclide><id>260580000</id><comp>477955227648</comp></nuclide>
+      <nuclide><id>260590000</id><comp>411101790208</comp></nuclide>
+      <nuclide><id>260570000</id><comp>13743401984</comp></nuclide>
+      <nuclide><id>260560000</id><comp>2170292992</comp></nuclide>
+      <nuclide><id>260550000</id><comp>328.1604003906</comp></nuclide>
+      <nuclide><id>260600000</id><comp>16184329109504</comp></nuclide>
+      <nuclide><id>270590000</id><comp>3249035280384</comp></nuclide>
+      <nuclide><id>270600000</id><comp>173211746304</comp></nuclide>
+      <nuclide><id>270580000</id><comp>435063.1875</comp></nuclide>
+      <nuclide><id>270610000</id><comp>9016503296</comp></nuclide>
+      <nuclide><id>280660000</id><comp>56752456335360</comp></nuclide>
+      <nuclide><id>280650000</id><comp>977492115456</comp></nuclide>
+      <nuclide><id>280640000</id><comp>1537880551849980</comp></nuclide>
+      <nuclide><id>280630000</id><comp>523299620651008</comp></nuclide>
+      <nuclide><id>280620000</id><comp>173403130560512</comp></nuclide>
+      <nuclide><id>280610000</id><comp>56700019146752</comp></nuclide>
+      <nuclide><id>280600000</id><comp>16227702784</comp></nuclide>
+      <nuclide><id>280590000</id><comp>2999.3544921875</comp></nuclide>
+      <nuclide><id>290650000</id><comp>4361164284755970</comp></nuclide>
+      <nuclide><id>290640000</id><comp>67728600</comp></nuclide>
+      <nuclide><id>290630000</id><comp>4018263031808</comp></nuclide>
+      <nuclide><id>290670000</id><comp>169888874233856</comp></nuclide>
+      <nuclide><id>300660000</id><comp>12040497358962700</comp></nuclide>
+      <nuclide><id>300690001</id><comp>1219701637120</comp></nuclide>
+      <nuclide><id>300700000</id><comp>556132809530409000</comp></nuclide>
+      <nuclide><id>300710001</id><comp>39247008497664</comp></nuclide>
+      <nuclide><id>300720000</id><comp>10420928542408700</comp></nuclide>
+      <nuclide><id>300670000</id><comp>32381667557507100</comp></nuclide>
+      <nuclide><id>300680000</id><comp>86102472103297000</comp></nuclide>
+      <nuclide><id>300640000</id><comp>10261442560</comp></nuclide>
+      <nuclide><id>310690000</id><comp>220033029999952000</comp></nuclide>
+      <nuclide><id>310710000</id><comp>1375644902121010000</comp></nuclide>
+      <nuclide><id>310720000</id><comp>3189679205646340</comp></nuclide>
+      <nuclide><id>310730000</id><comp>2733735409614850</comp></nuclide>
+      <nuclide><id>320720000</id><comp>3321463823935730000</comp></nuclide>
+      <nuclide><id>320730000</id><comp>8277846462792990000</comp></nuclide>
+      <nuclide><id>320740000</id><comp>23654952533600800000</comp></nuclide>
+      <nuclide><id>320750000</id><comp>4364051844956160</comp></nuclide>
+      <nuclide><id>320770000</id><comp>69290548472578100</comp></nuclide>
+      <nuclide><id>320760000</id><comp>193718414913854000000</comp></nuclide>
+      <nuclide><id>320780000</id><comp>82431907152789500</comp></nuclide>
+      <nuclide><id>320710000</id><comp>223720783872</comp></nuclide>
+      <nuclide><id>320700000</id><comp>67232872792064</comp></nuclide>
+      <nuclide><id>320690000</id><comp>193963.375</comp></nuclide>
+      <nuclide><id>330750000</id><comp>51878604579029400000</comp></nuclide>
+      <nuclide><id>330760000</id><comp>7108466153881600</comp></nuclide>
+      <nuclide><id>330780000</id><comp>87490820281729000</comp></nuclide>
+      <nuclide><id>330770000</id><comp>671697013527544000</comp></nuclide>
+      <nuclide><id>330730000</id><comp>276943.5625</comp></nuclide>
+      <nuclide><id>330740000</id><comp>2021624119296</comp></nuclide>
+      <nuclide><id>330720000</id><comp>3.522772789</comp></nuclide>
+      <nuclide><id>340760000</id><comp>2001746130517360000</comp></nuclide>
+      <nuclide><id>340770000</id><comp>342511769879199000000</comp></nuclide>
+      <nuclide><id>340780000</id><comp>1107428041127240000000</comp></nuclide>
+      <nuclide><id>340790000</id><comp>2281596051032400000000</comp></nuclide>
+      <nuclide><id>340820000</id><comp>13543571576599900000000</comp></nuclide>
+      <nuclide><id>340800000</id><comp>5377065456749610000000</comp></nuclide>
+      <nuclide><id>340750000</id><comp>1523398213632</comp></nuclide>
+      <nuclide><id>340740000</id><comp>14643512737792</comp></nuclide>
+      <nuclide><id>350790000</id><comp>1184840739478050000</comp></nuclide>
+      <nuclide><id>350810000</id><comp>8380379251404310000000</comp></nuclide>
+      <nuclide><id>350820000</id><comp>1574064694614820000</comp></nuclide>
+      <nuclide><id>350830000</id><comp>2190575295398940000</comp></nuclide>
+      <nuclide><id>350770000</id><comp>2173.2939453125</comp></nuclide>
+      <nuclide><id>350800001</id><comp>27386343063552</comp></nuclide>
+      <nuclide><id>360800000</id><comp>181344497173529000</comp></nuclide>
+      <nuclide><id>360810000</id><comp>9753521763123200</comp></nuclide>
+      <nuclide><id>360820000</id><comp>359122663786058000000</comp></nuclide>
+      <nuclide><id>360830000</id><comp>15037892954559200000000</comp></nuclide>
+      <nuclide><id>360840000</id><comp>44711435359359200000000</comp></nuclide>
+      <nuclide><id>360850000</id><comp>9617309777560220000000</comp></nuclide>
+      <nuclide><id>360870000</id><comp>4761379578746770000</comp></nuclide>
+      <nuclide><id>360860000</id><comp>72021326550128700000000</comp></nuclide>
+      <nuclide><id>360850001</id><comp>9058409008804660000</comp></nuclide>
+      <nuclide><id>360830001</id><comp>1668987595025020000</comp></nuclide>
+      <nuclide><id>360790000</id><comp>776884608</comp></nuclide>
+      <nuclide><id>360780000</id><comp>3749520384</comp></nuclide>
+      <nuclide><id>360880000</id><comp>14122207611503800000</comp></nuclide>
+      <nuclide><id>370850000</id><comp>39020808467403800000000</comp></nuclide>
+      <nuclide><id>370860000</id><comp>11442577927846200000</comp></nuclide>
+      <nuclide><id>370870000</id><comp>93253758662549400000000</comp></nuclide>
+      <nuclide><id>370840000</id><comp>1525718546644990</comp></nuclide>
+      <nuclide><id>370830000</id><comp>74289386618880</comp></nuclide>
+      <nuclide><id>370820001</id><comp>2377337344</comp></nuclide>
+      <nuclide><id>380860000</id><comp>220223330173952000000</comp></nuclide>
+      <nuclide><id>380870000</id><comp>1361942650776720000</comp></nuclide>
+      <nuclide><id>380880000</id><comp>127330785675004000000000</comp></nuclide>
+      <nuclide><id>380890000</id><comp>8272820344453780000000</comp></nuclide>
+      <nuclide><id>380910000</id><comp>86313888191950600000</comp></nuclide>
+      <nuclide><id>380900000</id><comp>191790239688004000000000</comp></nuclide>
+      <nuclide><id>380920000</id><comp>27358686039066500000</comp></nuclide>
+      <nuclide><id>380850000</id><comp>22230025109504</comp></nuclide>
+      <nuclide><id>380840000</id><comp>733824287768576</comp></nuclide>
+      <nuclide><id>380870001</id><comp>17279361220608</comp></nuclide>
+      <nuclide><id>380850001</id><comp>3051938304</comp></nuclide>
+      <nuclide><id>390890000</id><comp>157521899763380000000000</comp></nuclide>
+      <nuclide><id>390900000</id><comp>50998744588157500000</comp></nuclide>
+      <nuclide><id>390910000</id><comp>13103808583786000000000</comp></nuclide>
+      <nuclide><id>390920000</id><comp>35914445610652000000</comp></nuclide>
+      <nuclide><id>390930000</id><comp>124553838278744000000</comp></nuclide>
+      <nuclide><id>390880000</id><comp>48035781821857800</comp></nuclide>
+      <nuclide><id>390900001</id><comp>429115987460096</comp></nuclide>
+      <nuclide><id>390860000</id><comp>439.4477844238</comp></nuclide>
+      <nuclide><id>390870000</id><comp>221250928640</comp></nuclide>
+      <nuclide><id>390870001</id><comp>30521303040</comp></nuclide>
+      <nuclide><id>400900000</id><comp>8109701091850320000000</comp></nuclide>
+      <nuclide><id>400910000</id><comp>202062121775705000000000</comp></nuclide>
+      <nuclide><id>400920000</id><comp>234225515263294000000000</comp></nuclide>
+      <nuclide><id>400930000</id><comp>263075448375440000000000</comp></nuclide>
+      <nuclide><id>400960000</id><comp>286798429628592000000000</comp></nuclide>
+      <nuclide><id>400970000</id><comp>249235589342217000000</comp></nuclide>
+      <nuclide><id>400950000</id><comp>22105110374815000000000</comp></nuclide>
+      <nuclide><id>400940000</id><comp>274255094018432000000000</comp></nuclide>
+      <nuclide><id>400890000</id><comp>49354534551552</comp></nuclide>
+      <nuclide><id>410930000</id><comp>21432041425862700</comp></nuclide>
+      <nuclide><id>410940000</id><comp>594812769602109000</comp></nuclide>
+      <nuclide><id>410970000</id><comp>17974031039579800000</comp></nuclide>
+      <nuclide><id>410950000</id><comp>12142243901446200000000</comp></nuclide>
+      <nuclide><id>410960000</id><comp>1054860735449920000</comp></nuclide>
+      <nuclide><id>410950001</id><comp>13725476328411500000</comp></nuclide>
+      <nuclide><id>410930001</id><comp>180003780182409000</comp></nuclide>
+      <nuclide><id>410920000</id><comp>69330154815488</comp></nuclide>
+      <nuclide><id>410910000</id><comp>30788276</comp></nuclide>
+      <nuclide><id>410910001</id><comp>18441.509765625</comp></nuclide>
+      <nuclide><id>410920001</id><comp>958274207744</comp></nuclide>
+      <nuclide><id>420940000</id><comp>716428395151360</comp></nuclide>
+      <nuclide><id>420950000</id><comp>237401976138072000000000</comp></nuclide>
+      <nuclide><id>420960000</id><comp>17143862834610400000000</comp></nuclide>
+      <nuclide><id>420970000</id><comp>284031886391896000000000</comp></nuclide>
+      <nuclide><id>420980000</id><comp>293376315186735000000000</comp></nuclide>
+      <nuclide><id>421000000</id> <comp>327011557090142000000000</comp></nuclide>
+      <nuclide><id>420990000</id><comp>1115606507681800000000</comp></nuclide>
+      <nuclide><id>420930000</id><comp>2710022656</comp></nuclide>
+      <nuclide><id>420920000</id><comp>90801.3828125</comp></nuclide>
+      <nuclide><id>430990000</id><comp>270820630928200000000000</comp></nuclide>
+      <nuclide><id>430980000</id><comp>3682390610381110000</comp></nuclide>
+      <nuclide><id>430990001</id><comp>89573227684771700000</comp></nuclide>
+      <nuclide><id>430970000</id><comp>164299125293056</comp></nuclide>
+      <nuclide><id>430970001</id><comp>5310314971136</comp></nuclide>
+      <nuclide><id>430960000</id><comp>7519258112</comp></nuclide>
+      <nuclide><id>440980000</id><comp>555594219520</comp></nuclide>
+      <nuclide><id>440990000</id><comp>10523672080048700000</comp></nuclide>
+      <nuclide><id>441000000</id> <comp>40364457416229800000000</comp></nuclide>
+      <nuclide><id>441010000</id> <comp>273113953930450000000000</comp></nuclide>
+      <nuclide><id>441020000</id> <comp>279796737331114000000000</comp></nuclide>
+      <nuclide><id>441030000</id> <comp>15384006970821600000000</comp></nuclide>
+      <nuclide><id>441060000</id> <comp>59119824165203800000000</comp></nuclide>
+      <nuclide><id>441050000</id> <comp>57648929562528100000</comp></nuclide>
+      <nuclide><id>441040000</id> <comp>200404580940051000000000</comp></nuclide>
+      <nuclide><id>451030000</id> <comp>144897058007164000000000</comp></nuclide>
+      <nuclide><id>451020000</id> <comp>1064083438983710000</comp></nuclide>
+      <nuclide><id>451050000</id> <comp>428883597935887000000</comp></nuclide>
+      <nuclide><id>451010000</id> <comp>12334491</comp></nuclide>
+      <nuclide><id>451010001</id> <comp>5038713</comp></nuclide>
+      <nuclide><id>451020001</id> <comp>11146492903424</comp></nuclide>
+      <nuclide><id>451060001</id> <comp>6337073921392640</comp></nuclide>
+      <nuclide><id>461040000</id> <comp>89697644339183600000000</comp></nuclide>
+      <nuclide><id>461050000</id> <comp>146779634708999000000000</comp></nuclide>
+      <nuclide><id>461060000</id> <comp>77071163272703400000000</comp></nuclide>
+      <nuclide><id>461070000</id> <comp>83528685627205600000000</comp></nuclide>
+      <nuclide><id>461080000</id> <comp>56486317261501200000000</comp></nuclide>
+      <nuclide><id>461090000</id> <comp>60648762320961400000</comp></nuclide>
+      <nuclide><id>461100000</id> <comp>19685515446213200000000</comp></nuclide>
+      <nuclide><id>461120000</id> <comp>6043699858047500000</comp></nuclide>
+      <nuclide><id>461030000</id> <comp>32083227459977200</comp></nuclide>
+      <nuclide><id>461020000</id> <comp>4220778971136</comp></nuclide>
+      <nuclide><id>461110001</id> <comp>24366655140266000</comp></nuclide>
+      <nuclide><id>471070000</id> <comp>9839053889339390</comp></nuclide>
+      <nuclide><id>471080001</id> <comp>2774880659439620</comp></nuclide>
+      <nuclide><id>471090000</id> <comp>28937197110325600000000</comp></nuclide>
+      <nuclide><id>471130000</id> <comp>697999668126155000</comp></nuclide>
+      <nuclide><id>471110000</id> <comp>127274680956746000000</comp></nuclide>
+      <nuclide><id>471120000</id> <comp>935539740738847000</comp></nuclide>
+      <nuclide><id>471100001</id> <comp>438736664680016000000</comp></nuclide>
+      <nuclide><id>471060001</id> <comp>9097329</comp></nuclide>
+      <nuclide><id>481100000</id> <comp>16523006723080300000000</comp></nuclide>
+      <nuclide><id>481110000</id> <comp>8032322494852660000000</comp></nuclide>
+      <nuclide><id>481120000</id> <comp>3823220002515360000000</comp></nuclide>
+      <nuclide><id>481130000</id> <comp>25704426814612400000</comp></nuclide>
+      <nuclide><id>481160000</id> <comp>1718227966533180000000</comp></nuclide>
+      <nuclide><id>481170000</id> <comp>221544171293377000</comp></nuclide>
+      <nuclide><id>481150000</id> <comp>6455975486777460000</comp></nuclide>
+      <nuclide><id>481140000</id> <comp>4336276264514890000000</comp></nuclide>
+      <nuclide><id>481130001</id> <comp>26276867752404700000</comp></nuclide>
+      <nuclide><id>481150001</id> <comp>10594372876738000000</comp></nuclide>
+      <nuclide><id>481090000</id> <comp>25704588992577500</comp></nuclide>
+      <nuclide><id>481080000</id> <comp>1720998898434050</comp></nuclide>
+      <nuclide><id>481070000</id> <comp>2872060.75</comp></nuclide>
+      <nuclide><id>481060000</id> <comp>500864.90625</comp></nuclide>
+      <nuclide><id>481170001</id> <comp>92218041676333100</comp></nuclide>
+      <nuclide><id>491130000</id> <comp>1501999129117590000</comp></nuclide>
+      <nuclide><id>491110000</id> <comp>60009736</comp></nuclide>
+      <nuclide><id>491170001</id> <comp>158728024026513000</comp></nuclide>
+      <nuclide><id>491150000</id> <comp>496927816202758000000</comp></nuclide>
+      <nuclide><id>491150001</id> <comp>542301468649062000</comp></nuclide>
+      <nuclide><id>491130001</id> <comp>719483712</comp></nuclide>
+      <nuclide><id>491140001</id> <comp>910003011584</comp></nuclide>
+      <nuclide><id>501140000</id> <comp>170689456406266000</comp></nuclide>
+      <nuclide><id>501150000</id> <comp>70360427471711500000</comp></nuclide>
+      <nuclide><id>501160000</id> <comp>983188082631903000000</comp></nuclide>
+      <nuclide><id>501170000</id> <comp>1513377515357580000000</comp></nuclide>
+      <nuclide><id>501180000</id> <comp>1482924737627260000000</comp></nuclide>
+      <nuclide><id>501190000</id> <comp>1306187021963100000000</comp></nuclide>
+      <nuclide><id>501200000</id> <comp>1445259304356210000000</comp></nuclide>
+      <nuclide><id>501210000</id> <comp>3300276509746400000</comp></nuclide>
+      <nuclide><id>501250000</id> <comp>29291469151022400000</comp></nuclide>
+      <nuclide><id>501260000</id> <comp>7657187845541440000000</comp></nuclide>
+      <nuclide><id>501270000</id> <comp>1170076634779220000</comp></nuclide>
+      <nuclide><id>501240000</id> <comp>3765058265127680000000</comp></nuclide>
+      <nuclide><id>501230000</id> <comp>85249217888635600000</comp></nuclide>
+      <nuclide><id>501220000</id> <comp>2162006199889800000000</comp></nuclide>
+      <nuclide><id>501210001</id> <comp>146593821536398000000</comp></nuclide>
+      <nuclide><id>501190001</id> <comp>208311502673604000000</comp></nuclide>
+      <nuclide><id>501170001</id> <comp>80744964258005000</comp></nuclide>
+      <nuclide><id>501130000</id> <comp>130617720832</comp></nuclide>
+      <nuclide><id>501120000</id> <comp>2551396433920</comp></nuclide>
+      <nuclide><id>511210000</id> <comp>1445069449484420000000</comp></nuclide>
+      <nuclide><id>511220000</id> <comp>1125864378873150000</comp></nuclide>
+      <nuclide><id>511230000</id> <comp>2366845955016290000000</comp></nuclide>
+      <nuclide><id>511240000</id> <comp>21893838371112900000</comp></nuclide>
+      <nuclide><id>511280000</id> <comp>15326103574685900000</comp></nuclide>
+      <nuclide><id>511270000</id> <comp>94708034947415800000</comp></nuclide>
+      <nuclide><id>511260000</id> <comp>12841867002888900000</comp></nuclide>
+      <nuclide><id>511250000</id> <comp>2779685303357810000000</comp></nuclide>
+      <nuclide><id>511290000</id> <comp>9905140714331700000</comp></nuclide>
+      <nuclide><id>511190000</id> <comp>8594743296</comp></nuclide>
+      <nuclide><id>511200001</id> <comp>386103443456</comp></nuclide>
+      <nuclide><id>521220000</id> <comp>116363831250138000000</comp></nuclide>
+      <nuclide><id>521230000</id> <comp>1250689528792880000</comp></nuclide>
+      <nuclide><id>521240000</id> <comp>120307744274599000000</comp></nuclide>
+      <nuclide><id>521250000</id> <comp>885266315933987000000</comp></nuclide>
+      <nuclide><id>521260000</id> <comp>1170120259002570000000</comp></nuclide>
+      <nuclide><id>521270000</id> <comp>9507250545983750000</comp></nuclide>
+      <nuclide><id>521210000</id> <comp>119497891840</comp></nuclide>
+      <nuclide><id>521300000</id> <comp>108800634936195000000000</comp></nuclide>
+      <nuclide><id>521290000</id> <comp>3254528304815800000</comp></nuclide>
+      <nuclide><id>521280000</id> <comp>27446219655089600000000</comp></nuclide>
+      <nuclide><id>521270001</id> <comp>429002626666663000000</comp></nuclide>
+      <nuclide><id>521250001</id> <comp>34563409702906000000</comp></nuclide>
+      <nuclide><id>521290001</id> <comp>1027324062667580000000</comp></nuclide>
+      <nuclide><id>521310001</id> <comp>52731319826834800000</comp></nuclide>
+      <nuclide><id>521320000</id> <comp>1023952203552820000000</comp></nuclide>
+      <nuclide><id>521210001</id> <comp>793909788672</comp></nuclide>
+      <nuclide><id>521230001</id> <comp>1288115318685700</comp></nuclide>
+      <nuclide><id>531270000</id> <comp>12488735094177400000000</comp></nuclide>
+      <nuclide><id>531260000</id> <comp>5049331056902140</comp></nuclide>
+      <nuclide><id>531250000</id> <comp>249467420803072</comp></nuclide>
+      <nuclide><id>531230000</id> <comp>309917.9375</comp></nuclide>
+      <nuclide><id>531240000</id> <comp>318299308032</comp></nuclide>
+      <nuclide><id>531350000</id> <comp>116496678643053000000</comp></nuclide>
+      <nuclide><id>531330000</id> <comp>390218013703842000000</comp></nuclide>
+      <nuclide><id>531300000</id> <comp>4067224627905040000</comp></nuclide>
+      <nuclide><id>531310000</id> <comp>1804546631003640000000</comp></nuclide>
+      <nuclide><id>531320000</id> <comp>30759400736987000000</comp></nuclide>
+      <nuclide><id>531290000</id> <comp>46786068067303400000000</comp></nuclide>
+      <nuclide><id>531320001</id> <comp>164022859709022000</comp></nuclide>
+      <nuclide><id>541260000</id> <comp>49123739987607500</comp></nuclide>
+      <nuclide><id>541270000</id> <comp>1009786405519360</comp></nuclide>
+      <nuclide><id>541250000</id> <comp>607644736</comp></nuclide>
+      <nuclide><id>541240000</id> <comp>14077592</comp></nuclide>
+      <nuclide><id>541280000</id> <comp>836673390748333000000</comp></nuclide>
+      <nuclide><id>541290000</id> <comp>5271325924883700000</comp></nuclide>
+      <nuclide><id>541300000</id> <comp>2516556865629150000000</comp></nuclide>
+      <nuclide><id>541310000</id> <comp>104010732473313000000000</comp></nuclide>
+      <nuclide><id>541320000</id> <comp>295670502880113000000000</comp></nuclide>
+      <nuclide><id>541330000</id> <comp>2360563433536110000000</comp></nuclide>
+      <nuclide><id>541350000</id> <comp>35473930675030100000</comp></nuclide>
+      <nuclide><id>541360000</id> <comp>614865072025036000000000</comp></nuclide>
+      <nuclide><id>541340000</id> <comp>376974995759349000000000</comp></nuclide>
+      <nuclide><id>541330001</id> <comp>29442575034027600000</comp></nuclide>
+      <nuclide><id>541310001</id> <comp>31281479644180600000</comp></nuclide>
+      <nuclide><id>541290001</id> <comp>2780659187712</comp></nuclide>
+      <nuclide><id>551330000</id> <comp>278946962124625000000000</comp></nuclide>
+      <nuclide><id>551340000</id> <comp>40040427926640100000000</comp></nuclide>
+      <nuclide><id>551370000</id> <comp>312061912170282000000000</comp></nuclide>
+      <nuclide><id>551350000</id> <comp>84010642844928200000000</comp></nuclide>
+      <nuclide><id>551360000</id> <comp>156655179763292000000</comp></nuclide>
+      <nuclide><id>551310000</id> <comp>1076259127296</comp></nuclide>
+      <nuclide><id>551290000</id> <comp>1.4737722874</comp></nuclide>
+      <nuclide><id>551320000</id> <comp>78233963168006100</comp></nuclide>
+      <nuclide><id>551340001</id> <comp>1221525743075330</comp></nuclide>
+      <nuclide><id>561340000</id> <comp>14407304564234300000000</comp></nuclide>
+      <nuclide><id>561350000</id> <comp>119235157487564000000</comp></nuclide>
+      <nuclide><id>561360000</id> <comp>4947815554315910000000</comp></nuclide>
+      <nuclide><id>561370000</id> <comp>10929487572190100000000</comp></nuclide>
+      <nuclide><id>561380000</id> <comp>327697617442978000000000</comp></nuclide>
+      <nuclide><id>561390000</id> <comp>23055808856416300000</comp></nuclide>
+      <nuclide><id>561400000</id> <comp>4790085421616560000000</comp></nuclide>
+      <nuclide><id>561330000</id> <comp>48554532266836000</comp></nuclide>
+      <nuclide><id>561320000</id> <comp>70569078632218600</comp></nuclide>
+      <nuclide><id>561310000</id> <comp>12123622400</comp></nuclide>
+      <nuclide><id>561300000</id> <comp>123383344</comp></nuclide>
+      <nuclide><id>561350001</id> <comp>413370268254208</comp></nuclide>
+      <nuclide><id>561330001</id> <comp>62990479360</comp></nuclide>
+      <nuclide><id>571390000</id> <comp>307931210592057000000000</comp></nuclide>
+      <nuclide><id>571400000</id> <comp>656976458285274000000</comp></nuclide>
+      <nuclide><id>571420000</id> <comp>21412892193914400000</comp></nuclide>
+      <nuclide><id>571410000</id> <comp>57973426230210300000</comp></nuclide>
+      <nuclide><id>571370000</id> <comp>41360543650414600</comp></nuclide>
+      <nuclide><id>571380000</id> <comp>5875151872335020000</comp></nuclide>
+      <nuclide><id>571350000</id> <comp>13933573120</comp></nuclide>
+      <nuclide><id>581400000</id> <comp>300115627769922000000000</comp></nuclide>
+      <nuclide><id>581410000</id> <comp>11472006945901900000000</comp></nuclide>
+      <nuclide><id>581440000</id> <comp>79542522575422200000000</comp></nuclide>
+      <nuclide><id>581430000</id> <comp>440052067614929000000</comp></nuclide>
+      <nuclide><id>581420000</id> <comp>276972728163174000000000</comp></nuclide>
+      <nuclide><id>581390000</id> <comp>2044068083269630</comp></nuclide>
+      <nuclide><id>581380000</id> <comp>124407158669312</comp></nuclide>
+      <nuclide><id>581370000</id> <comp>2674355</comp></nuclide>
+      <nuclide><id>581370001</id> <comp>5752559</comp></nuclide>
+      <nuclide><id>581360000</id> <comp>660.983581543</comp></nuclide>
+      <nuclide><id>591410000</id> <comp>263340242019131000000000</comp></nuclide>
+      <nuclide><id>591420000</id> <comp>14732517928779900000</comp></nuclide>
+      <nuclide><id>591430000</id> <comp>4305568470455670000000</comp></nuclide>
+      <nuclide><id>591450000</id> <comp>55089728287949200000</comp></nuclide>
+      <nuclide><id>591390000</id> <comp>118143.96875</comp></nuclide>
+      <nuclide><id>601420000</id> <comp>6115795970176770000000</comp></nuclide>
+      <nuclide><id>601430000</id> <comp>169345199865115000000000</comp></nuclide>
+      <nuclide><id>601440000</id> <comp>251543927486362000000000</comp></nuclide>
+      <nuclide><id>601450000</id> <comp>156192076865410000000000</comp></nuclide>
+      <nuclide><id>601460000</id> <comp>170684588408694000000000</comp></nuclide>
+      <nuclide><id>601470000</id> <comp>1568530848194180000000</comp></nuclide>
+      <nuclide><id>601500000</id> <comp>42844670795816000000000</comp></nuclide>
+      <nuclide><id>601490000</id> <comp>6427427217118070000</comp></nuclide>
+      <nuclide><id>601480000</id> <comp>89325890204342700000000</comp></nuclide>
+      <nuclide><id>611470000</id> <comp>37539597067959800000000</comp></nuclide>
+      <nuclide><id>611510000</id> <comp>56749770943565400000</comp></nuclide>
+      <nuclide><id>611500000</id> <comp>145166441451094000</comp></nuclide>
+      <nuclide><id>611490000</id> <comp>201679459641092000000</comp></nuclide>
+      <nuclide><id>611480000</id> <comp>283156560998084000000</comp></nuclide>
+      <nuclide><id>611450000</id> <comp>6777685489483780</comp></nuclide>
+      <nuclide><id>611460000</id> <comp>379089517019136</comp></nuclide>
+      <nuclide><id>611480001</id> <comp>1895781115204870000000</comp></nuclide>
+      <nuclide><id>611440000</id> <comp>3331.9360351563</comp></nuclide>
+      <nuclide><id>621470000</id> <comp>14938426453189100000000</comp></nuclide>
+      <nuclide><id>621480000</id> <comp>51918018921883900000000</comp></nuclide>
+      <nuclide><id>621490000</id> <comp>274143556321948000000</comp></nuclide>
+      <nuclide><id>621500000</id> <comp>53777856949200200000000</comp></nuclide>
+      <nuclide><id>621510000</id> <comp>2128634808125970000000</comp></nuclide>
+      <nuclide><id>621560000</id> <comp>2500921660748590000</comp></nuclide>
+      <nuclide><id>621540000</id> <comp>9298891210156290000000</comp></nuclide>
+      <nuclide><id>621530000</id> <comp>236214134707117000000</comp></nuclide>
+      <nuclide><id>621520000</id> <comp>21738693005532500000000</comp></nuclide>
+      <nuclide><id>621460000</id> <comp>1922406196090770000</comp></nuclide>
+      <nuclide><id>631510000</id> <comp>1909560876621370000</comp></nuclide>
+      <nuclide><id>631520000</id> <comp>2143494757253380000</comp></nuclide>
+      <nuclide><id>631530000</id> <comp>27445989971508600000000</comp></nuclide>
+      <nuclide><id>631540000</id> <comp>6044577734519400000000</comp></nuclide>
+      <nuclide><id>631560000</id> <comp>1168440838554020000000</comp></nuclide>
+      <nuclide><id>631570000</id> <comp>5726075138038820000</comp></nuclide>
+      <nuclide><id>631550000</id> <comp>1952591631966840000000</comp></nuclide>
+      <nuclide><id>631500000</id> <comp>64615681622016</comp></nuclide>
+      <nuclide><id>631490000</id> <comp>5369881088</comp></nuclide>
+      <nuclide><id>631520001</id> <comp>298530275328</comp></nuclide>
+      <nuclide><id>631520002</id> <comp>241603723264</comp></nuclide>
+      <nuclide><id>631500001</id> <comp>4006267</comp></nuclide>
+      <nuclide><id>641520000</id> <comp>25164799650299900</comp></nuclide>
+      <nuclide><id>641530000</id> <comp>22229689867173900</comp></nuclide>
+      <nuclide><id>641540000</id> <comp>484996478968086000000</comp></nuclide>
+      <nuclide><id>641550000</id> <comp>12095419553908000000</comp></nuclide>
+      <nuclide><id>641560000</id> <comp>22365927340034900000000</comp></nuclide>
+      <nuclide><id>641570000</id> <comp>25335171227586700000</comp></nuclide>
+      <nuclide><id>641580000</id> <comp>5397586108451720000000</comp></nuclide>
+      <nuclide><id>641590000</id> <comp>2015566854239550000</comp></nuclide>
+      <nuclide><id>641600000</id> <comp>536064519177073000000</comp></nuclide>
+      <nuclide><id>641510000</id> <comp>116144152576</comp></nuclide>
+      <nuclide><id>641500000</id> <comp>1189984000</comp></nuclide>
+      <nuclide><id>651590000</id> <comp>839490884896463000000</comp></nuclide>
+      <nuclide><id>651600000</id> <comp>30348541828989400000</comp></nuclide>
+      <nuclide><id>651610000</id> <comp>6978521686412890000</comp></nuclide>
+      <nuclide><id>651580000</id> <comp>21820974336835600</comp></nuclide>
+      <nuclide><id>651570000</id> <comp>345642224320512</comp></nuclide>
+      <nuclide><id>651560000</id> <comp>101042454528</comp></nuclide>
+      <nuclide><id>651560001</id> <comp>11732025344</comp></nuclide>
+      <nuclide><id>651560002</id> <comp>12835876</comp></nuclide>
+      <nuclide><id>651550000</id> <comp>56995336</comp></nuclide>
+      <nuclide><id>651540002</id> <comp>1.9465522766</comp></nuclide>
+      <nuclide><id>661600000</id> <comp>66144614017795100000</comp></nuclide>
+      <nuclide><id>661610000</id> <comp>208229065689800000000</comp></nuclide>
+      <nuclide><id>661620000</id> <comp>225084068770211000000</comp></nuclide>
+      <nuclide><id>661630000</id> <comp>184774512344501000000</comp></nuclide>
+      <nuclide><id>661640000</id> <comp>54079079189930100000</comp></nuclide>
+      <nuclide><id>661650000</id> <comp>54317343290949600</comp></nuclide>
+      <nuclide><id>661580000</id> <comp>13899066769408</comp></nuclide>
+      <nuclide><id>661590000</id> <comp>3127539924992</comp></nuclide>
+      <nuclide><id>661660000</id> <comp>120663558538134000</comp></nuclide>
+      <nuclide><id>661570000</id> <comp>3.1987485886</comp></nuclide>
+      <nuclide><id>671650000</id> <comp>105393062557864000000</comp></nuclide>
+      <nuclide><id>671670000</id> <comp>2083113094086660</comp></nuclide>
+      <nuclide><id>671660000</id> <comp>39635173683232800</comp></nuclide>
+      <nuclide><id>671630000</id> <comp>63156009304064</comp></nuclide>
+      <nuclide><id>671610000</id> <comp>3904249.5</comp></nuclide>
+      <nuclide><id>671660001</id> <comp>1171494592462190000</comp></nuclide>
+      <nuclide><id>671620001</id> <comp>266025328</comp></nuclide>
+      <nuclide><id>681660000</id> <comp>32727711268659500000</comp></nuclide>
+      <nuclide><id>681670000</id> <comp>1933721132813260000</comp></nuclide>
+      <nuclide><id>681680000</id> <comp>7431347853731040000</comp></nuclide>
+      <nuclide><id>681690000</id> <comp>32956102253477900</comp></nuclide>
+      <nuclide><id>681650000</id> <comp>912522280960</comp></nuclide>
+      <nuclide><id>681640000</id> <comp>233078110814208</comp></nuclide>
+      <nuclide><id>681630000</id> <comp>504022.96875</comp></nuclide>
+      <nuclide><id>681620000</id> <comp>1657476.5</comp></nuclide>
+      <nuclide><id>681700000</id> <comp>418789273051857000</comp></nuclide>
+      <nuclide><id>681710000</id> <comp>168568272453632</comp></nuclide>
+      <nuclide><id>681720000</id> <comp>393928259928064</comp></nuclide>
+      <nuclide><id>691690000</id> <comp>1114938394388990000</comp></nuclide>
+      <nuclide><id>691710000</id> <comp>133684138443014000</comp></nuclide>
+      <nuclide><id>691720000</id> <comp>508143922577408</comp></nuclide>
+      <nuclide><id>691700000</id> <comp>5108884045824</comp></nuclide>
+      <nuclide><id>691730000</id> <comp>25158756597760</comp></nuclide>
+      <nuclide><id>691680000</id> <comp>17797888000</comp></nuclide>
+      <nuclide><id>691660000</id> <comp>66441.2265625</comp></nuclide>
+      <nuclide><id>691670000</id> <comp>198044720</comp></nuclide>
+      <nuclide><id>701710000</id> <comp>45662846750556200</comp></nuclide>
+      <nuclide><id>701720000</id> <comp>64895813381259300</comp></nuclide>
+      <nuclide><id>701700000</id> <comp>13369591463936</comp></nuclide>
+      <nuclide><id>701730000</id> <comp>24811147748180000</comp></nuclide>
+      <nuclide><id>701740000</id> <comp>8928352245121020</comp></nuclide>
+      <nuclide><id>701750000</id> <comp>40361976135680</comp></nuclide>
+      <nuclide><id>701760000</id> <comp>1025353313157120</comp></nuclide>
+      <nuclide><id>701770000</id> <comp>91512889344</comp></nuclide>
+      <nuclide><id>701780000</id> <comp>17178886144</comp></nuclide>
+      <nuclide><id>701680000</id> <comp>2691047.25</comp></nuclide>
+      <nuclide><id>701690000</id> <comp>55.8041229248</comp></nuclide>
+      <nuclide><id>711750000</id> <comp>2626174933008380</comp></nuclide>
+      <nuclide><id>711760000</id> <comp>88553811869696</comp></nuclide>
+      <nuclide><id>711790000</id> <comp>23373629440</comp></nuclide>
+      <nuclide><id>711770000</id> <comp>23987667075072</comp></nuclide>
+      <nuclide><id>711740000</id> <comp>60506284032</comp></nuclide>
+      <nuclide><id>711730000</id> <comp>561056512</comp></nuclide>
+      <nuclide><id>711760001</id> <comp>55287608</comp></nuclide>
+      <nuclide><id>711770001</id> <comp>63152463872</comp></nuclide>
+      <nuclide><id>711740001</id> <comp>1935910400</comp></nuclide>
+      <nuclide><id>721760000</id> <comp>56166539264</comp></nuclide>
+      <nuclide><id>721770000</id> <comp>302748050391040</comp></nuclide>
+      <nuclide><id>721780000</id> <comp>450399765004288</comp></nuclide>
+      <nuclide><id>721790000</id> <comp>234923990450176</comp></nuclide>
+      <nuclide><id>721800000</id> <comp>36366603780096</comp></nuclide>
+      <nuclide><id>721810000</id> <comp>583987625984</comp></nuclide>
+      <nuclide><id>721790002</id> <comp>765900672</comp></nuclide>
+      <nuclide><id>721820000</id> <comp>572637511680</comp></nuclide>
+      <nuclide><id>721830000</id> <comp>19815326</comp></nuclide>
+      <nuclide><id>721800001</id> <comp>4026953472</comp></nuclide>
+      <nuclide><id>721750000</id> <comp>240834.21875</comp></nuclide>
+      <nuclide><id>721820001</id> <comp>14366536</comp></nuclide>
+      <nuclide><id>721840000</id> <comp>9365913</comp></nuclide>
+      <nuclide><id>731810000</id> <comp>2817147273216</comp></nuclide>
+      <nuclide><id>731820000</id> <comp>26387437568</comp></nuclide>
+      <nuclide><id>731830000</id> <comp>16062994432</comp></nuclide>
+      <nuclide><id>731840000</id> <comp>67596088</comp></nuclide>
+      <nuclide><id>731800000</id> <comp>113371.9453125</comp></nuclide>
+      <nuclide><id>731790000</id> <comp>83337.59375</comp></nuclide>
+      <nuclide><id>731800001</id> <comp>15745940480</comp></nuclide>
+      <nuclide><id>741820000</id> <comp>39335870464</comp></nuclide>
+      <nuclide><id>741830000</id> <comp>492338446336</comp></nuclide>
+      <nuclide><id>741840000</id> <comp>60135780352</comp></nuclide>
+      <nuclide><id>741850000</id> <comp>3274828800</comp></nuclide>
+      <nuclide><id>741860000</id> <comp>2430552320</comp></nuclide>
+      <nuclide><id>741870000</id> <comp>7803823</comp></nuclide>
+      <nuclide><id>741810000</id> <comp>204488.84375</comp></nuclide>
+      <nuclide><id>741800000</id> <comp>10839663</comp></nuclide>
+      <nuclide><id>751880000</id> <comp>425083.4375</comp></nuclide>
+      <nuclide><id>751850000</id> <comp>3724604928</comp></nuclide>
+      <nuclide><id>751860000</id> <comp>39193092</comp></nuclide>
+      <nuclide><id>751870000</id> <comp>819975104</comp></nuclide>
+      <nuclide><id>751840000</id> <comp>11993.8779296875</comp></nuclide>
+      <nuclide><id>751830000</id> <comp>10.2412862778</comp></nuclide>
+      <nuclide><id>761880000</id> <comp>55395796</comp></nuclide>
+      <nuclide><id>761860000</id> <comp>885976064</comp></nuclide>
+      <nuclide><id>802040000</id> <comp>16.1739788055</comp></nuclide>
+      <nuclide><id>812050000</id> <comp>197697.53125</comp></nuclide>
+      <nuclide><id>822100000</id> <comp>21642663936</comp></nuclide>
+      <nuclide><id>822060000</id> <comp>426138048</comp></nuclide>
+      <nuclide><id>822070000</id> <comp>6122747904</comp></nuclide>
+      <nuclide><id>822080000</id> <comp>45039078080512</comp></nuclide>
+      <nuclide><id>822090000</id> <comp>12184737</comp></nuclide>
+      <nuclide><id>822050000</id> <comp>5474.6870117188</comp></nuclide>
+      <nuclide><id>822040000</id> <comp>2.8862953186</comp></nuclide>
+      <nuclide><id>822120000</id> <comp>121014444032</comp></nuclide>
+      <nuclide><id>832100000</id> <comp>13224069</comp></nuclide>
+      <nuclide><id>832090000</id> <comp>13254917120</comp></nuclide>
+      <nuclide><id>832080000</id> <comp>221230.203125</comp></nuclide>
+      <nuclide><id>832070000</id> <comp>165.7732543945</comp></nuclide>
+      <nuclide><id>832120000</id> <comp>11475578880</comp></nuclide>
+      <nuclide><id>842100000</id> <comp>263352112</comp></nuclide>
+      <nuclide><id>862220000</id> <comp>57209.75390625</comp></nuclide>
+      <nuclide><id>882260000</id> <comp>8863101952</comp></nuclide>
+      <nuclide><id>882250000</id> <comp>1453861248</comp></nuclide>
+      <nuclide><id>882230000</id> <comp>329838496</comp></nuclide>
+      <nuclide><id>882240000</id> <comp>990145150976</comp></nuclide>
+      <nuclide><id>882280000</id> <comp>1418549.875</comp></nuclide>
+      <nuclide><id>892250000</id> <comp>886028288</comp></nuclide>
+      <nuclide><id>892260000</id> <comp>6014570</comp></nuclide>
+      <nuclide><id>892270000</id> <comp>29700630528</comp></nuclide>
+      <nuclide><id>892280000</id> <comp>51348420</comp></nuclide>
+      <nuclide><id>892240000</id> <comp>47.2066726685</comp></nuclide>
+      <nuclide><id>902340000</id> <comp>1572193448230910</comp></nuclide>
+      <nuclide><id>902300000</id> <comp>947782110150656</comp></nuclide>
+      <nuclide><id>902270000</id> <comp>563700160</comp></nuclide>
+      <nuclide><id>902280000</id> <comp>194353746149376</comp></nuclide>
+      <nuclide><id>902290000</id> <comp>47503869214720</comp></nuclide>
+      <nuclide><id>902310000</id> <comp>3916922617856</comp></nuclide>
+      <nuclide><id>902320000</id> <comp>27542420530921500</comp></nuclide>
+      <nuclide><id>902290001</id> <comp>193943.71875</comp></nuclide>
+      <nuclide><id>912310000</id> <comp>2115247368306690</comp></nuclide>
+      <nuclide><id>912320000</id> <comp>7249673584640</comp></nuclide>
+      <nuclide><id>912330000</id> <comp>2131071235784700</comp></nuclide>
+      <nuclide><id>912340000</id> <comp>831550324736</comp></nuclide>
+      <nuclide><id>912300000</id> <comp>7171688960</comp></nuclide>
+      <nuclide><id>912290000</id> <comp>200020.953125</comp></nuclide>
+      <nuclide><id>922380000</id> <comp>106761462887170000000000000</comp></nuclide>
+      <nuclide><id>922350000</id> <comp>627264814864677000000000</comp></nuclide>
+      <nuclide><id>922340000</id> <comp>315081224158188000000</comp></nuclide>
+      <nuclide><id>922320000</id> <comp>40273057931067400</comp></nuclide>
+      <nuclide><id>922330000</id> <comp>90976409580732400</comp></nuclide>
+      <nuclide><id>922310000</id> <comp>25024456704</comp></nuclide>
+      <nuclide><id>922300000</id> <comp>860719424</comp></nuclide>
+      <nuclide><id>922360000</id> <comp>494842556688543000000000</comp></nuclide>
+      <nuclide><id>922370000</id> <comp>1396722885272130000000</comp></nuclide>
+      <nuclide><id>922400000</id> <comp>83693536</comp></nuclide>
+      <nuclide><id>932370000</id> <comp>62805214315873300000000</comp></nuclide>
+      <nuclide><id>932380000</id> <comp>242404279618380000000</comp></nuclide>
+      <nuclide><id>932390000</id> <comp>12696175396613700000000</comp></nuclide>
+      <nuclide><id>932400000</id> <comp>534221741812089000</comp></nuclide>
+      <nuclide><id>932360000</id> <comp>44334769848188900</comp></nuclide>
+      <nuclide><id>932350000</id> <comp>1460738912681980</comp></nuclide>
+      <nuclide><id>932340000</id> <comp>115790264</comp></nuclide>
+      <nuclide><id>932360001</id> <comp>2491909691932670</comp></nuclide>
+      <nuclide><id>942380000</id> <comp>27418490992183900000000</comp></nuclide>
+      <nuclide><id>942390000</id> <comp>648812917785779000000000</comp></nuclide>
+      <nuclide><id>942400000</id> <comp>295411437815148000000000</comp></nuclide>
+      <nuclide><id>942410000</id> <comp>190292468552731000000000</comp></nuclide>
+      <nuclide><id>942420000</id> <comp>98579319265110600000000</comp></nuclide>
+      <nuclide><id>942430000</id> <comp>29716784437901900000</comp></nuclide>
+      <nuclide><id>942440000</id> <comp>4179214834996350000</comp></nuclide>
+      <nuclide><id>942450000</id> <comp>253708449349632</comp></nuclide>
+      <nuclide><id>942360000</id> <comp>220590877532225000</comp></nuclide>
+      <nuclide><id>942370000</id> <comp>63788308819345400</comp></nuclide>
+      <nuclide><id>942340000</id> <comp>183627.234375</comp></nuclide>
+      <nuclide><id>942460000</id> <comp>11751.8701171875</comp></nuclide>
+      <nuclide><id>942470000</id> <comp>95.6217422485</comp></nuclide>
+      <nuclide><id>952410000</id> <comp>4771442770959060000000</comp></nuclide>
+      <nuclide><id>952430000</id> <comp>22592805178462900000000</comp></nuclide>
+      <nuclide><id>952440000</id> <comp>25274902597221700000</comp></nuclide>
+      <nuclide><id>952450000</id> <comp>5853051508228100</comp></nuclide>
+      <nuclide><id>952420000</id> <comp>2431747937533950</comp></nuclide>
+      <nuclide><id>952400000</id> <comp>6795477504</comp></nuclide>
+      <nuclide><id>952390000</id> <comp>15001571328</comp></nuclide>
+      <nuclide><id>952420001</id> <comp>96327360488432200000</comp></nuclide>
+      <nuclide><id>962420000</id> <comp>2487174818710230000000</comp></nuclide>
+      <nuclide><id>962430000</id> <comp>64584552153515800000</comp></nuclide>
+      <nuclide><id>962440000</id> <comp>9217043916428370000000</comp></nuclide>
+      <nuclide><id>962450000</id> <comp>587492143668807000000</comp></nuclide>
+      <nuclide><id>962460000</id> <comp>70082233437698100000</comp></nuclide>
+      <nuclide><id>962470000</id> <comp>1024808196444780000</comp></nuclide>
+      <nuclide><id>962480000</id> <comp>71874095855173600</comp></nuclide>
+      <nuclide><id>962490000</id> <comp>1238100344832</comp></nuclide>
+      <nuclide><id>962500000</id> <comp>12627524608</comp></nuclide>
+      <nuclide><id>962410000</id> <comp>1328241990172670</comp></nuclide>
+      <nuclide><id>962400000</id> <comp>3756157042688</comp></nuclide>
+      <nuclide><id>962390000</id> <comp>1147.5895996094</comp></nuclide>
+      <nuclide><id>972490000</id> <comp>850694038880256</comp></nuclide>
+      <nuclide><id>972500000</id> <comp>1893603606528</comp></nuclide>
+      <nuclide><id>972480000</id> <comp>4736339456</comp></nuclide>
+      <nuclide><id>972470000</id> <comp>34747412</comp></nuclide>
+      <nuclide><id>972460000</id> <comp>1.5335665941</comp></nuclide>
+      <nuclide><id>982490000</id> <comp>108816737763328</comp></nuclide>
+      <nuclide><id>982500000</id> <comp>525029083185152</comp></nuclide>
+      <nuclide><id>982510000</id> <comp>136063456641024</comp></nuclide>
+      <nuclide><id>982520000</id> <comp>90988504678400</comp></nuclide>
+      <nuclide><id>982530000</id> <comp>181834809344</comp></nuclide>
+      <nuclide><id>982540000</id> <comp>4474.5737304688</comp></nuclide>
+      <nuclide><id>982480000</id> <comp>152058128</comp></nuclide>
+      <nuclide><id>982470000</id> <comp>59.7744293213</comp></nuclide>
+      <nuclide><id>992530000</id> <comp>133958541312</comp></nuclide>
+      <nuclide><id>992540000</id> <comp>44101115904</comp></nuclide>
+      <nuclide><id>992550000</id> <comp>113547448</comp></nuclide>
+      <nuclide><id>992520000</id> <comp>3505.5905761719</comp></nuclide>
+      <nuclide><id>1002550000</id> <comp>2136332</comp></nuclide>
+      <nuclide><id>1002560000</id> <comp>7227.4272460938</comp></nuclide>
     </recipe>
     
 </simulation>
